@@ -1,0 +1,41 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* File Field Widget */
+filefield {
+  -moz-appearance: none;
+  margin: 2px 4px;
+  border: 2px solid;
+  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
+  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
+  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  padding-inline-start: 4px;
+  background-color: -moz-Dialog;
+  color: -moz-FieldText;
+}
+
+.fileFieldContentBox {
+  background-color: -moz-Dialog;
+}
+
+.fileFieldIcon[disabled="true"] {
+  opacity: 0.4;
+}
+
+.fileFieldIcon {
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-inline-start: 1px;
+  margin-inline-end: 4px;
+}
+
+.fileFieldLabel {
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  margin: 0px;
+}
