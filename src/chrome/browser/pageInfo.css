@@ -22,20 +22,20 @@
 
 #viewGroup > radio:hover {
   -moz-appearance: none;
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 #viewGroup > radio[selected="true"] {
   -moz-appearance: none;
   background-color: rgba(255, 255, 255, 0.5);
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
 #topBar {
   border-bottom: 2px groove ThreeDFace;
   padding-inline-start: 10px;
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 #generalTab {
@@ -153,7 +153,7 @@ groupbox.collapsable[closed="true"] caption .caption-icon {
 
 treechildren::-moz-tree-cell-text(broken) {
   font-style: italic;
-  color: graytext;
+  color: #6A6A6A;
 }
 
 /* Feeds Tab */
@@ -171,16 +171,13 @@ treechildren::-moz-tree-cell-text(broken) {
 }
 
 #feedListbox richlistitem[selected="true"] {
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 #feedListbox {
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
 .feedTitle { 
@@ -191,12 +188,9 @@ treechildren::-moz-tree-cell-text(broken) {
 #permList {
   margin-top: .5em;
   overflow: auto;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-field;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
 }
 
 .permission {
@@ -213,7 +207,7 @@ treechildren::-moz-tree-cell-text(broken) {
 }
 
 .permission:hover {
-  background-color: -moz-dialog;
+  background-color: #CCCCDD;
 }
 
 /* Security Tab */

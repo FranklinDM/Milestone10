@@ -15,15 +15,12 @@ textbox {
   -moz-appearance: none;
   cursor: text;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding: 2px 2px 3px;
   padding-inline-start: 4px;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background-color: #fff;
+  color: #000;
 }
 
 html|*.textbox-input, 
@@ -36,12 +33,6 @@ html|*.textbox-textarea {
   font: inherit;
 }
 
-@media (-moz-windows-default-theme) {
-  textbox html|*.textbox-input::-moz-placeholder {
-    font-style: italic;
-  }
-}
-
 .textbox-contextmenu {
   cursor: default;
 }
@@ -49,16 +40,18 @@ html|*.textbox-textarea {
 /* ..... readonly state ..... */
 
 textbox[readonly="true"] {
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 /* ..... disabled state ..... */
 
 textbox[disabled="true"] {
   cursor: default;
-  background-color: -moz-Dialog;
-  color: GrayText;
+  border-color: #6A6A6A;
+  background-color: #CCCCDD;
+  color: #6A6A6A;
+  text-shadow: 1px 1px #ECECEC;
 }
 
 /* ::::: plain textbox ::::: */

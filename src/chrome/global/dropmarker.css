@@ -8,12 +8,9 @@ dropmarker {
   height: 16px;
   -moz-box-align: center;
   -moz-box-pack: center;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
-  background-color: -moz-Dialog;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
   padding: 1px;
   list-style-image: url("chrome://global/skin/arrow/arrow-dn.gif");
   -moz-image-region: auto;
@@ -25,10 +22,7 @@ dropmarker {
   dropmarker:hover:active:not([disabled="true"])
  */
 *[open="true"]:not([disabled="true"]) dropmarker {
-  -moz-border-top-colors: ThreeDShadow ThreeDFace;
-  -moz-border-right-colors: ThreeDShadow ThreeDFace;
-  -moz-border-bottom-colors: ThreeDShadow ThreeDFace;
-  -moz-border-left-colors: ThreeDShadow ThreeDFace;
+  border-color: #6A6A6A;
   padding-top: 2px;
   padding-bottom: 0px;
   padding-inline-start: 2px;

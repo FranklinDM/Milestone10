@@ -55,8 +55,8 @@ radio[pane] {
   border-bottom: 2px groove ThreeDFace;
   margin: 0px;
   padding-inline-start: 10px;
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 .paneButtonIcon {
@@ -66,11 +66,11 @@ radio[pane] {
 
 radio[pane]:hover:not([selected="true"]) {
   -moz-appearance: none;
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 radio[pane][selected="true"] {
   -moz-appearance: none;
   background-color: rgba(255, 255, 255, 0.5);
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }

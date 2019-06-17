@@ -8,8 +8,8 @@ notification {
   color: InfoText;
   background-color: InfoBackground;
   text-shadow: none;
-  border-top: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDShadow;
+  border-top: 1px solid #6A6A6A;
+  border-bottom: 1px solid #6A6A6A;
 }
 
 notificationbox[notificationside="top"] > notification {
@@ -21,8 +21,8 @@ notificationbox[notificationside="bottom"] > notification {
 }
 
 notification[type="info"] {
-  color: -moz-DialogText;
-  background-color: -moz-Dialog;
+  color: #000;
+  background-color: #CCCCDD;
 }
 
 notification[type="critical"] {
@@ -93,34 +93,14 @@ notification[type="critical"] {
 XXX: apply styles to all themes until bug 509642 is fixed
 @media (-moz-windows-default-theme) {
 */
-  .popup-notification-menubutton {
-    -moz-appearance: none;
-    padding: 0;
-    border: 3px solid;
-    -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow;
-    -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow;
-    -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow;
-    -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow;
-    background-color: ThreeDFace;
-    color: ButtonText;
-  }
-
-  .popup-notification-menubutton:hover:active {
-    border-color: rgba(0,0,0,.5);
-  }
-
   .popup-notification-menubutton:not([type="menu-button"]),
   .popup-notification-menubutton > .button-menubutton-button,
   .popup-notification-menubutton > .button-menubutton-dropmarker {
-    -moz-appearance: none;
     margin: 0;
-    border: none;
   }
 
   .popup-notification-menubutton > .button-menubutton-button {
-    background-color: transparent;
     padding: 1px;
-    border-inline-end: none;
   }
 
   .popup-notification-menubutton:not([type="menu-button"]),
@@ -133,19 +113,11 @@ XXX: apply styles to all themes until bug 509642 is fixed
     padding: 9px 5px 8px;
     width: auto;
     height: auto;
-    list-style-image: url("chrome://global/skin/arrow/arrow-dn-sharp.gif");
   }
 
   .popup-notification-menubutton:-moz-focusring > .button-menubutton-dropmarker {
     outline: 1px dotted ThreeDDarkShadow;
     outline-offset: -3px;
-  }
-
-  .popup-notification-menubutton:not([type="menu-button"]):hover:active,
-  .popup-notification-menubutton > .button-menubutton-button:hover:active,
-  .popup-notification-menubutton > .button-menubutton-dropmarker:hover:active,
-  .popup-notification-menubutton[open="true"] > .button-menubutton-dropmarker {
-    background-color: rgba(0,0,0,.05);
   }
 /*}*/
 

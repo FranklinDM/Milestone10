@@ -13,13 +13,10 @@
 tree {
   -moz-appearance: none;
   margin: 0px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
 }
 
 /* ::::: tree focusring ::::: */
@@ -32,7 +29,6 @@ tree {
   border: 1px solid #000000;
 }
 
-
 /* ::::: tree rows ::::: */
 
 treechildren::-moz-tree-row {
@@ -42,15 +38,15 @@ treechildren::-moz-tree-row {
 }
 
 treechildren::-moz-tree-row(selected) {
-  background-color: -moz-cellhighlight;
+  background-color: #808080;
 }
 
 treechildren::-moz-tree-row(selected, focus) {
-  background-color: Highlight;
+  background-color: #666699;
 }
 
 treechildren::-moz-tree-row(current, focus) {
-  border: 1px dotted Highlight;
+  border: 1px dotted #666699;
 }
 
 treechildren::-moz-tree-row(selected, current, focus) {
@@ -77,7 +73,7 @@ treechildren::-moz-tree-cell-text {
 }
 
 treechildren::-moz-tree-cell-text(selected) {
-  color: -moz-cellhighlighttext;
+  color: #fff;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell {
@@ -91,35 +87,35 @@ tree[seltype="text"] > treechildren::-moz-tree-cell-text {
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected) {
-  background-color: -moz-cellhighlight;
+  background-color: #808080;
 }
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected) {
-  color: -moz-cellhighlighttext;
+  color: #fff;
 }
 
 tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected) {
-  background-color: -moz-cellhighlight;
-  color: -moz-cellhighlighttext;
+  background-color: #808080;
+  color: #fff;
 }
 
 treechildren::-moz-tree-cell-text(selected, focus) {
-  color: HighlightText;
+  color: #fff;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell(active, selected, focus) {
-  background-color: Highlight;
+  background-color: #666699;
 }
 
 tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
-  background-color: Highlight;
+  background-color: #666699;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
-  color: HighlightText;
+  color: #fff;
 }
 
 tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, focus) {
-  color: HighlightText;
+  color: #fff;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell(active, current, focus) {
@@ -143,38 +139,39 @@ tree[seltype="text"] > treechildren::-moz-tree-cell-text(active, selected, curre
 tree[seltype="cell"] > treechildren::-moz-tree-line,
 tree[seltype="text"] > treechildren::-moz-tree-line,
 treechildren::-moz-tree-line {
-  border: 1px dotted ThreeDShadow;
+  border: 1px dotted #6A6A6A;
   visibility: visible;
   border-style: dotted;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-line(active, selected, focus),
+treechildren::-moz-tree-line(selected),
 treechildren::-moz-tree-line(selected, focus) {
-  border: 1px dotted HighlightText;
+  border: 1px dotted #fff;
 }
 
 /* ::::: tree separator ::::: */
 
 treechildren::-moz-tree-separator {
-  border-top: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDHighlight;
+  border-top: 1px solid #6A6A6A;
+  border-bottom: 1px solid #ECECEC;
 }
 
 
 /* ::::: drop feedback ::::: */
 
 treechildren::-moz-tree-row(dropOn) {
-  background-color: Highlight;
+  background-color: #666699;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text(primary, dropOn),
 tree[seltype="text"] > treechildren::-moz-tree-cell-text(primary, dropOn),
 treechildren::-moz-tree-cell-text(primary, dropOn) {
-  color: HighlightText;
+  color: #fff;
 }
 
 treechildren::-moz-tree-drop-feedback {
-  background-color: Highlight;
+  background-color: #666699;
   width: 50px;
   height: 2px;
   margin-inline-start: 5px;
@@ -186,12 +183,9 @@ treechildren::-moz-tree-progressmeter {
   margin: 2px 4px;
   padding: 1px;
   border: 1px solid;
-  border-top-color: ThreeDShadow;
-  border-right-color: ThreeDHighlight;
-  border-bottom-color: ThreeDHighlight;
-  border-left-color: ThreeDShadow;
-  background-color: -moz-Dialog;
-  color: ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #CCCCDD;
+  color: #6A6A6A;
 }
 
 treechildren::-moz-tree-cell-text(progressmeter) {
@@ -205,13 +199,10 @@ treecolpicker {
   -moz-appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
   padding: 0px 4px;
 }
 
@@ -233,20 +224,13 @@ treecol[hideheader="true"] {
 
 treecol:hover:active,
 treecolpicker:hover:active {
-  border-top: 2px solid;
-  border-bottom: 1px solid;
-  -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDShadow;
-  -moz-border-left-colors: ThreeDShadow -moz-Dialog;
-  padding-top: 1px;
+  border-color: #6A6A6A;
   padding-bottom: 0px;
   padding-inline-start: 5px;
   padding-inline-end: 3px;
 }
 
 .treecol-image:hover:active {
-  padding-top: 1px;
   padding-bottom: 0px;
   padding-inline-start: 2px;
   padding-inline-end: 0px;
@@ -259,26 +243,26 @@ treecol[dragging="true"] {
   -moz-border-right-colors: ThreeDDarkShadow transparent!important;
   -moz-border-bottom-colors: ThreeDDarkShadow transparent !important;
   -moz-border-left-colors: ThreeDDarkShadow transparent !important;
-  background-color: ThreeDShadow !important;
-  color: ThreeDHighlight !important;
+  background-color: #6A6A6A !important;
+  color: #ECECEC !important;
 }
 
 treecol[insertafter="true"]:-moz-locale-dir(ltr),
 treecol[insertbefore="true"]:-moz-locale-dir(rtl) {
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-right-colors: ThreeDDarkShadow #6A6A6A;
 }
 
 treecol[insertafter="true"]:-moz-locale-dir(rtl),
 treecol[insertbefore="true"]:-moz-locale-dir(ltr) {
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+  -moz-border-left-colors: ThreeDDarkShadow #6A6A6A;
 }
 
 treechildren::-moz-tree-column(insertbefore) {
-  -moz-border-start: 1px solid ThreeDShadow;
+  -moz-border-start: 1px solid #6A6A6A;
 }
 
 treechildren::-moz-tree-column(insertafter) {
-  -moz-border-end: 1px solid ThreeDShadow;
+  -moz-border-end: 1px solid #6A6A6A;
 }
 
 /* ::::: sort direction indicator :::::  */
@@ -346,11 +330,7 @@ treechildren::-moz-tree-cell-text(selected, editing) {
 
 .tree-input {
   -moz-appearance: none;
-  border: 1px solid Highlight;
-  -moz-border-top-colors: Highlight;
-  -moz-border-bottom-colors: Highlight;
-  -moz-border-left-colors: Highlight;
-  -moz-border-right-colors: Highlight;
+  border: 1px solid #666699;
   margin: 0;
   margin-inline-start: -4px;
   padding: 1px;

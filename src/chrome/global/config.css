@@ -7,13 +7,13 @@
 
 
 #warningScreen {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 #warningBox {
-  background-color: -moz-Field;
-  color: -moz-FieldText;
-  border: 1px solid ThreeDShadow;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #6A6A6A;
   padding: 3em;
   padding-inline-start: 30px;
   margin-left: 1em;

@@ -11,20 +11,17 @@
 /* SCROLLBOX */
 #newtab-vertical-margin,
 #newtab-scrollbox:not([page-disabled]) {
-  color: -moz-DialogText;
-  background-color: -moz-Dialog;
+  color: #000;
+  background-color: #CCCCDD;
 }
 
 /* UNDO */
 #newtab-undo-container {
   padding: 4px 3px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 #newtab-undo-label {
@@ -97,8 +94,8 @@
 /* CELLS */
 .newtab-cell {
   margin-inline-end: 20px;
-  background-color: #F3F3F3;
-  border: 1px solid #CFCFCF;
+  background-color: #404060;
+  border: 1px solid #666699;
   transition: border-color 100ms ease-out;
 }
 
@@ -111,7 +108,7 @@
 }
 
 .newtab-cell:hover:not(:empty):not([dragged]) {
-  border-color: #ACB0B5;
+  border-color: #AAAAFF;
 }
 
 /* SITES */
@@ -137,8 +134,8 @@
 /* TITLES */
 .newtab-title {
   padding: 0 8px 1px;
-  background-color: #CFCFCF;
-  color: #000;
+  background-color: #666699;
+  color: #CCCCFF;
   line-height: 24px;
 }
 
@@ -168,6 +165,7 @@
   padding: 1px 2px 3px;
   border: none;
   background: transparent url(chrome://browser/skin/newtab/controls.png);
+  top: 4px;
 }
 
 .newtab-control-pin:dir(ltr),
@@ -240,35 +238,36 @@
 }
 
 /* SEARCH BAR */
+/*
+ * XXX: I still find it annoying that these rules are defined in 'content' and not in the 'skin'.
+ *      This forces me to use !important, something I wanted to avoid here.
+ */
+#searchText:focus,
 #searchText {
   box-shadow: none;
   border-radius: 0;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 #searchSubmit {
   margin-inline-start: 5px;
   box-shadow: none !important;
   border-radius: 0;
-  border: 3px solid;
-  -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow;
-  background-color: ThreeDFace !important;
-  color: ButtonText !important;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD !important;
+  color: #6A75B6 !important;
+  transition: none;
 }
 #searchSubmit:hover {
   cursor: default;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC !important;
 }
 #searchSubmit:hover:active {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow transparent;
+  border-color: #6A6A6A !important;
+}
+#searchText:focus + #searchSubmit {
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC !important;
 }
 #searchLogoContainer > * {
   transform: scale(.75);

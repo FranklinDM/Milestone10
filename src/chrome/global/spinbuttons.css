@@ -13,33 +13,23 @@ spinbuttons {
   min-width: 13px;
   min-height: 11px;
   margin: 0 !important;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: ThreeDFace;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
 }
 
 .spinbuttons-button > .button-box {
   border: 0;
 }
 
-.spinbuttons-button:hover:active
-{
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+.spinbuttons-button:hover:active {
+  border: 1px solid;
+  border-color: #6A6A6A;
 }
 
 .spinbuttons-button[disabled="true"] {
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow !important;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow !important;
+  border: 1px solid;
+  border-color: #6A6A6A !important;
 }
 
 .spinbuttons-up {
@@ -47,6 +37,10 @@ spinbuttons {
   background-image: url("chrome://global/skin/arrow/arrow-up.gif");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.spinbuttons-up:hover:not([disabled="true"]) {
+  background-image: url("chrome://global/skin/arrow/arrow-up-hov.gif");
 }
 
 .spinbuttons-up[disabled="true"] {
@@ -58,6 +52,10 @@ spinbuttons {
   background-image: url("chrome://global/skin/arrow/arrow-dn.gif");
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.spinbuttons-down:hover:not([disabled="true"]) {
+  background-image: url("chrome://global/skin/arrow/arrow-dn-hov.gif");
 }
 
 .spinbuttons-down[disabled="true"] {

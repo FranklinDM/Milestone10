@@ -6,11 +6,11 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 *|*:root {
-  --in-content-page-color: -moz-DialogText;
-  --in-content-page-background: -moz-Dialog;
-  --in-content-text-color: -moz-DialogText;
+  --in-content-page-color: #000;
+  --in-content-page-background: #CCCCDD;
+  --in-content-text-color: #000;
   --in-content-selected-text: #fff;
-  --in-content-header-border-color: #c8c8c8;
+  --in-content-header-border-color: #6A6A6A;
   --in-content-box-background: #fff;
   --in-content-box-background-odd: #f3f6fa;
   --in-content-box-background-hover: #ebebeb;
@@ -20,17 +20,17 @@
   --in-content-item-selected: #0095dd;
   --in-content-border-highlight: #ff9500;
   --in-content-border-focus: #0095dd;
-  --in-content-border-color: #c1c1c1;
+  --in-content-border-color: #6A6A6A;
   --in-content-category-border-focus: 1px dotted #fff;
   --in-content-tab-color: #424f5a;
-  --in-content-table-border-dark-color: #d1d1d1;
-  --in-content-table-header-background: ThreeDShadow;
+  --in-content-table-border-dark-color: #6A6A6A;
+  --in-content-table-header-background: #8080C0;
 }
 
 html|html,
 xul|page,
 xul|window {
-  font: message-box;
+  font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
   -moz-appearance: none;
   background-color: var(--in-content-page-background);
   color: var(--in-content-page-color);
@@ -56,8 +56,8 @@ xul|caption > xul|label {
 }
 
 *|*.main-content {
-  background-color: -moz-dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
   
   margin-top: 40px;
   margin-inline-end: 1.2em;
@@ -67,11 +67,8 @@ xul|caption > xul|label {
   
   overflow: auto;
 
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 *|*.panel {
@@ -164,18 +161,92 @@ xul|textbox {
   -moz-appearance: none;
 }
 
+*|button {
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+}
+*|button:hover:not([disabled]) {
+  color: #333366;
+  text-decoration: underline;
+}
+*|button:hover:active:not([disabled]) {
+  text-decoration: none;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+}
+*|button[disabled] {
+  border-color: #6A6A6A;
+  color: #6A6A6A;
+  text-shadow: 1px 1px #ECECEC;
+}
+
+html|select,
+xul|colorpicker[type="button"],
+xul|menulist,
+html|input[type="text"],
+html|textarea,
+xul|textbox {
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
+}
+
 /* Checkboxes and radio buttons */
+
+/* Hide the actual checkbox */
+html|input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+/* Create a box to style as the checkbox */
+html|input[type="checkbox"] + html|label:before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+}
+
+html|input[type="checkbox"] + html|label {
+  line-height: 0px;
+}
+
+html|input[type="checkbox"] + html|label:before {
+  -moz-appearance: none;
+  width: 13px;
+  height: 13px;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  margin-inline-end: 10px;
+  background-color: #CCCCDD;
+  /* !important needed to override toolkit checked !important rule */
+  background-image: linear-gradient(#CCCCDD, #CCCCDD) !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+html|input[type="checkbox"]:checked + html|label:before {
+  background-image: url("chrome://global/skin/checkbox/cbox-check.gif"), linear-gradient(#CCCCDD, #CCCCDD) !important;
+}
+
+html|input[type="checkbox"]:disabled + html|label {
+  opacity: 0.5;
+}
+
+xul|richlistitem > xul|*.checkbox-check {
+  margin: 3px 6px;
+}
 
 html|*.toggle-container-with-text {
   display: flex;
   align-items: center;
 }
 
-xul|checkbox,
-input[type="checkbox"] {
-  -moz-appearance: none;
+xul|radio {
+  -moz-binding: url("chrome://global/skin/globalBindings.xml#radio");
 }
-
 
 /* Category List */
 
@@ -189,13 +260,10 @@ input[type="checkbox"] {
 
 *|*.category {
   -moz-appearance: none;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
   padding-inline-start: 15px;
   padding-inline-end: 5em;
   min-height: 50px;
@@ -203,10 +271,7 @@ input[type="checkbox"] {
 
 *|*.category[selected],
 *|*.category.selected {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+  border-color: #6A6A6A;
 }
 
 *|*#categories[keyboard-navigation="true"]:-moz-focusring > *|*.category[current] {
@@ -251,14 +316,14 @@ input[type="checkbox"] {
 @media not all and (-moz-windows-default-theme) {
   xul|treechildren::-moz-tree-row(selected),
   xul|listbox xul|listitem[selected="true"] {
-     border: 2px dotted Highlight;
+     border: 2px dotted #666699;
   }
 }
 
 #warning_message > .container {
-  background-color: -moz-Field;
-  color: -moz-FieldText;
-  border: 1px solid ThreeDShadow;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #6A6A6A;
   padding: 2em 3em;
   padding-inline-start: 30px;
   margin-left: 1em;

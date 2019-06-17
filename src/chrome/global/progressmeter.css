@@ -13,19 +13,26 @@
 progressmeter {
   -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   min-width: 128px;
-  min-height: 15px;
+  min-height: 13px;
 }
 
 .progress-bar {
   -moz-appearance: none;
   min-width: 0px;
-  background-color: darkblue;
+  background-color: #8080C0;
+  background-image: url("chrome://global/skin/progressmeter/indeterminate.gif");
+}
+
+progressmeter[mode="undetermined"] {
+  background-image: url("chrome://global/skin/progressmeter/indeterminate.gif");
+}
+
+.progress-bar[mode="undetermined"],
+.progress-remainder[mode="undetermined"] {
+  visibility: collapse;
 }
 
 /* ::::: statusbar progressmeter ::::: */
@@ -33,9 +40,9 @@ progressmeter {
 .progressmeter-statusbar {
   margin: 0;
   border: 0px;
-  -moz-border-top-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-left-colors: ThreeDHighlight -moz-Dialog;
+  -moz-border-top-colors: #ECECEC #CCCCDD;
+  -moz-border-right-colors: #6A6A6A #CCCCDD;
+  -moz-border-bottom-colors: #6A6A6A #CCCCDD;
+  -moz-border-left-colors: #ECECEC #CCCCDD;
   min-width: 96px;
 }

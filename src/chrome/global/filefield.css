@@ -6,18 +6,15 @@
 filefield {
   -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding-inline-start: 4px;
-  background-color: -moz-Dialog;
-  color: -moz-FieldText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 .fileFieldContentBox {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 .fileFieldIcon[disabled="true"] {

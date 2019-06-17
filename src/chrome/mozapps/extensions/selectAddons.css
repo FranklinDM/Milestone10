@@ -120,7 +120,7 @@
 .addon:not([active]) .addon-name,
 .addon:not([active]) .addon-action-message,
 .addon:not([active]) .addon-action-update {
-  color: GrayText;
+  color: #6A6A6A;
 }
 
 .addon-icon {
@@ -167,7 +167,7 @@
 
 .progress-label,
 #footer-label {
-  color: GrayText;
+  color: #6A6A6A;
 }
 
 .progress-label,

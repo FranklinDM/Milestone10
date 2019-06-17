@@ -64,14 +64,15 @@
 
 #placesMenu > menu[_moz-menuactive="true"] {
   background-color: transparent;
+  color: #000;
 }
 
 #placesMenu > menu:hover {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 #placesMenu > menu[open="true"] {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding-inline-start: 5px;
   padding-inline-end: 0px;
   padding-top: 3px;
@@ -79,7 +80,7 @@
 }
 
 #placesMenu > menu > .menubar-text {
-  padding-inline-end: 8px;
+  padding-inline-end: 10px;
   background: url(chrome://global/skin/arrow/arrow-dn.gif) right center no-repeat;
 }
 
@@ -116,7 +117,7 @@
 
 /* Info box */
 #detailsDeck {
-  border-top: 1px solid ThreeDShadow;
+  border-top: 1px solid #9999CC;
   padding: 5px;
 }
 

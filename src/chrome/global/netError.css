@@ -12,14 +12,14 @@
  */
 
 html {
-  background: -moz-Dialog;
+  background: #CCCCDD;
 }
 
 body {
   margin: 0;
   padding: 0 1em;
-  color: -moz-FieldText;
-  font: message-box;
+  color: #000;
+  font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
 }
 
 h1 {
@@ -47,11 +47,11 @@ ul {
   min-width: 13em;
   max-width: 52em;
   margin: 4em auto;
-  border: 1px solid ThreeDShadow;
+  border: 1px solid #6A6A6A;
   border-radius: 10px;
   padding: 3em;
   padding-inline-start: 30px;
-  background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat -moz-Field;
+  background: url("chrome://global/skin/icons/warning-large.png") left 0 no-repeat #fff;
   background-origin: content-box;
 }
 

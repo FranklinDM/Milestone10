@@ -28,14 +28,11 @@ dialog {
 
 dialogheader {
   margin: 0px 5px 5px 5px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDDarkShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDDarkShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding: 5px 8px;
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #8080C0;
+  color: #fff;
 }
 
 .dialogheader-title {
@@ -55,7 +52,7 @@ dialogheader {
   border-left: none;
   border-right: none;
   border-top: none;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDShadow;
+  -moz-border-bottom-colors: #ECECEC #6A6A6A;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-inline-start: 25px;

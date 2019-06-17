@@ -4,7 +4,7 @@
 
 #tabs-display,
 #tabsList {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
   border: none;
   margin: 0;
 }
@@ -40,9 +40,9 @@ richlistitem:focus {
 richlistitem[type="tab"] {
   min-height: 3em;
   margin-inline-start: 2em;
-  border: 1px solid ThreeDShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid #6A6A6A;
+  background-color: #fff;
+  color: #000;
   padding: 2px 5px;
   width: 44em;
   margin-bottom: 2px;

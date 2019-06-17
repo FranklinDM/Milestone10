@@ -10,8 +10,8 @@
 }
 
 #clientBox {
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 @media (-moz-windows-compositor) {

@@ -260,7 +260,7 @@ splitter.status4evar-status-splitter {
   box-shadow: none !important;
   border: none !important;
   border-top: 2px solid !important;
-  -moz-border-top-colors: ThreeDShadow ThreeDHighlight !important;
+  -moz-border-top-colors: #6A6A6A #ECECEC !important;
 }
 
 #browser-bottombox[s4eboarder="true"] > *:not([hidden="true"]):not([collapsed="true"]) ~ * {

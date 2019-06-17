@@ -14,12 +14,11 @@ splitter {
   -moz-box-align: center;
   -moz-box-pack: center;
   cursor: ew-resize;
-  border-width: 0 2px;
+  border-width: 0 1px;
   border-style: solid;
-  -moz-border-left-colors: ThreeDShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDFace;
+  border-color: #9999CC;
   min-width: 6px;
-  background-color: ThreeDFace;
+  background-color: #CCCCDD;
 }
 
 splitter[state="collapsed"][collapse="before"],
@@ -44,9 +43,8 @@ splitter:-moz-lwtheme {
 
 splitter[orient="vertical"] {
   cursor: ns-resize;
-  border-width: 2px 0;
-  -moz-border-top-colors: ThreeDShadow ThreeDHighlight;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDFace;
+  border-width: 1px 0;
+  border-color: #9999CC;
   min-height: 6px;
 }
 
@@ -68,8 +66,8 @@ splitter[disabled="true"] {
 
 grippy {
   cursor: pointer;
-  border-top: 1px solid ThreeDShadow;
-  border-bottom: 1px solid ThreeDShadow;
+  border-top: 1px solid #9999CC;
+  border-bottom: 1px solid #9999CC;
   min-width: 4px;
   min-height: 115px;
   background-color: transparent;
@@ -77,14 +75,14 @@ grippy {
 }
 
 grippy:hover {
-  background-color: ThreeDHighlight;
+  background-color: #ECECEC;
 }
 
 splitter[orient="vertical"] > grippy {
   border-top: none;
-  border-right: 1px solid ThreeDShadow;
+  border-right: 1px solid #9999CC;
   border-bottom: none;
-  border-left: 1px solid ThreeDShadow;;
+  border-left: 1px solid #9999CC;
   min-width: 115px;
   min-height: 4px;
 }

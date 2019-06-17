@@ -27,6 +27,7 @@ table {
   width: 100%;
   border: 1px solid var(--in-content-border-color);
   border-spacing: 0px;
+  margin-bottom: 0.5em;
 }
 
 th, td {
@@ -46,6 +47,7 @@ th.column {
 }
 
 td {
+  background-color: #ebebeb;
   border-color: var(--in-content-table-border-dark-color);
 }
 

@@ -8,15 +8,12 @@
 
 menupopup,
 panel {
-  border: 3px solid transparent;
-  -moz-border-top-colors   : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
+  border: 1px solid transparent;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
   padding: 0px;
   min-width: 1px;
-  background: Menu;
-  color: MenuText;
+  background: #CCCCDD;
+  color: #000;
 }
 
 menupopup {
@@ -76,15 +73,15 @@ panel[type="arrow"][side="right"] {
 
 .panel-arrowcontent {
   padding: 10px;
-  color: -moz-DialogText;
-  background: -moz-Dialog;
+  color: #000;
+  background: #CCCCDD;
   background-clip: padding-box;
   margin: 4px;
   border: 2px solid;
-  -moz-border-top-colors   : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
+  -moz-border-top-colors   : ThreeDLightShadow #ECECEC ThreeDFace;
+  -moz-border-left-colors  : ThreeDLightShadow #ECECEC ThreeDFace;
+  -moz-border-right-colors : ThreeDDarkShadow  #6A6A6A    ThreeDFace;
+  -moz-border-bottom-colors: ThreeDDarkShadow  #6A6A6A    ThreeDFace;
 }
 
 .panel-arrow[side="top"],
@@ -131,7 +128,7 @@ tooltip {
   max-width: 40em;
   background-color: InfoBackground;
   color: InfoText;
-  font: message-box;
+  font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
 }
 
 tooltip[titletip="true"] {
@@ -146,11 +143,11 @@ tooltip[titletip="true"] {
 menulist > menupopup {
   -moz-appearance: none;
   border-width: 1px;
-  -moz-border-top-colors: -moz-FieldText;
-  -moz-border-right-colors: -moz-FieldText;
-  -moz-border-bottom-colors: -moz-FieldText;
-  -moz-border-left-colors: -moz-FieldText;
+  -moz-border-top-colors: #000;
+  -moz-border-right-colors: #000;
+  -moz-border-bottom-colors: #000;
+  -moz-border-left-colors: #000;
   padding: 0px;
   min-width: 0px;
-  background-color: -moz-Field;
+  background-color: #fff;
 }

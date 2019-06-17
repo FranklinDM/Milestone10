@@ -9,8 +9,8 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 .console-box {
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background-color: #fff;
+  color: #000;
 }
 
 /* ::::: console rows ::::: */
@@ -77,8 +77,8 @@
 /* ..... selected state ..... */
 
 .console-row[selected="true"] {
-  background: Highlight;
-  color: HighlightText;
+  background: #666699;
+  color: #fff;
 }
 
 .console-row-code[selected="true"],

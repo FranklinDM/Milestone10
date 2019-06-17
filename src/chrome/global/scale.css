@@ -25,12 +25,9 @@
 
 .scale-thumb {
   -moz-appearance: none;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
-  background-color: -moz-Dialog;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
   min-width: 30px;
   min-height: 15px;
 }
@@ -42,8 +39,5 @@
 }
 
 .scale-thumb[disabled="true"] {
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow !important;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow !important;
+  border-color: #6A6A6A;
 }

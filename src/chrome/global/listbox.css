@@ -14,17 +14,14 @@
 listbox {
   -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
 }
 
 listbox[disabled="true"] {
-  color: GrayText;
+  color: #6A6A6A;
 }
 
 /* ::::: listitem ::::: */
@@ -38,18 +35,18 @@ listbox:focus > listitem[selected="true"][current="true"] {
 }
 
 listbox:focus > listitem[current="true"] {
-  outline: 1px dotted Highlight;
+  outline: 1px dotted #666699;
   outline-offset: -1px;
 }
 
 listitem[selected="true"] {
-  background-color: -moz-cellhighlight;
-  color: -moz-cellhighlighttext;
+  background-color: #808080;
+  color: #fff;
 }
 
 listbox:focus > listitem[selected="true"] {
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
 }
 
 /* ::::: listheader ::::: */
@@ -57,13 +54,13 @@ listbox:focus > listitem[selected="true"] {
 listheader {
   -moz-appearance: none;
   -moz-box-align: center;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  -moz-border-top-colors: #ECECEC;
+  -moz-border-right-colors: #6A6A6A;
+  -moz-border-bottom-colors: #6A6A6A;
+  -moz-border-left-colors: #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
   padding: 0 4px;
 }
 
@@ -72,10 +69,10 @@ listheader[sortable="true"]:hover:active {
   border-right: 1px solid;
   border-bottom: 1px solid;
   border-left: 2px solid;
-  -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDShadow;
-  -moz-border-left-colors: ThreeDShadow -moz-Dialog;
+  -moz-border-top-colors: #6A6A6A #CCCCDD;
+  -moz-border-right-colors: #6A6A6A;
+  -moz-border-bottom-colors: #6A6A6A;
+  -moz-border-left-colors: #6A6A6A #CCCCDD;
   padding-top: 1px;
   padding-bottom: 0px;
   padding-inline-start: 5px;
@@ -120,7 +117,7 @@ listheader[sortable="true"]:hover:active {
 }
 
 .listcell-label[disabled="true"] {
-  color: GrayText;
+  color: #6A6A6A;
 }
 
 /* ::::: listcell checkbox ::::: */
@@ -129,7 +126,7 @@ listheader[sortable="true"]:hover:active {
   -moz-appearance: none;
   -moz-box-align: center;
   margin: 0px 2px;
-  border: 1px solid -moz-DialogText;
+  border: 1px solid #000;
   min-width: 13px;
   min-height: 13px;
   background: -moz-Field no-repeat 50% 50%;

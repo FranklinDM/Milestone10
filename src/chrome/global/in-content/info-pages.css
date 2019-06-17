@@ -18,6 +18,7 @@
   background-image: url("chrome://global/skin/icons/warning-large.png");
   background-position: left -1px;
   background-repeat: no-repeat;
+  padding-bottom: 5px;
 }
 
 .title,

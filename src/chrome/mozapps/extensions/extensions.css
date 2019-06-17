@@ -39,7 +39,7 @@
 
 #detail-view .global-warning {
   padding: 4px 12px;
-  border-bottom: 1px solid ThreeDShadow;  
+  border-bottom: 1px solid #6A6A6A;  
 }
 
 @media (max-width: 600px) {
@@ -120,13 +120,10 @@
 .alert {
   -moz-box-align: center;
   padding: 10px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 .alert .alert-title {
@@ -158,13 +155,10 @@
 
 .category {
   -moz-appearance: none;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDHighlight ThreeDLightShadow;
-  background-color: -moz-dialog;
-  color: -moz-DialogText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
   min-height: 0;
   -moz-box-align: center;
   overflow: hidden;
@@ -187,10 +181,7 @@
 }
 
 .category[selected] {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow;
+  border-color: #6A6A6A;
 }
 
 .category-name {
@@ -284,7 +275,7 @@
   padding: 4px;
   margin: 0;
   min-height: 31px;
-  border-bottom: 1px solid ThreeDShadow;
+  border-bottom: 1px solid #6A6A6A;
 }
 
 
@@ -375,10 +366,7 @@
 
 .addon {
   color: black;
-  border-top: 1x solid;
-  -moz-border-top-colors: ThreeDShadow;
-  border-bottom: 1px solid;
-  -moz-border-bottom-colors: ThreeDShadow;
+  border-bottom: 1px solid #6A6A6A;
   padding: 5px;
   background-origin: border-box;
 }
@@ -614,7 +602,7 @@
 #search-filter {
   padding: 5px 20px;
   font-size: 120%;
-  border-bottom: 1px solid ThreeDShadow;
+  border-bottom: 1px solid #6A6A6A;
   overflow-x: hidden;
 }
 
@@ -630,8 +618,8 @@
 }
 
 .search-filter-radio[selected] {
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
 }
 
 .search-filter-radio .radio-check-box1 {
@@ -833,7 +821,7 @@ setting {
 
 .preferences-description {
   font-size: 90.9%;
-  color: graytext;
+  color: #6A6A6A;
   margin-top: -2px;
   margin-inline-start: 2em;
   white-space: pre-wrap;
@@ -884,12 +872,9 @@ menulist { /* Fixes some styling inconsistencies */
 /*** download progress ***/
 
 .download-progress {
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow -moz-Dialog;
-  -moz-border-right-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-bottom-colors: ThreeDHighlight -moz-Dialog;
-  -moz-border-left-colors: ThreeDShadow -moz-Dialog;
-  background-color: -moz-Dialog;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #CCCCDD;
   width: 200px;
   height: 21px;
   margin: 0 8px;
@@ -908,7 +893,7 @@ menulist { /* Fixes some styling inconsistencies */
 .download-progress[mode="undetermined"] .end-cap,
 .download-progress .progress .progress-bar {
   -moz-appearance: none;
-  background-color: darkblue;
+  background-color: #8080C0;
 }
 
 .download-progress .start-cap {
@@ -1040,22 +1025,16 @@ button.button-link:not([disabled="true"]):active:hover {
 
 .header-button {
   -moz-appearance: none;
-  border: 2px solid;
-  -moz-border-top-colors:    ThreeDHighlight  ThreeDHighlight;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors:   ThreeDHighlight  ThreeDHighlight;
-  -moz-border-right-colors:  ThreeDDarkShadow ThreeDShadow;
-  background-color: ThreeDFace;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
   color: ButtonText;
   text-shadow: none;
 }
 
 .header-button:hover:active,
 .header-button[open] {
-  -moz-border-bottom-colors: ThreeDHighlight  ThreeDHighlight;
-  -moz-border-top-colors:    ThreeDDarkShadow ThreeDShadow;
-  -moz-border-right-colors:  ThreeDHighlight  ThreeDHighlight;
-  -moz-border-left-colors:   ThreeDDarkShadow ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
 .header-button[disabled="true"] {

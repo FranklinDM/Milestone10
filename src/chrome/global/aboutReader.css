@@ -249,10 +249,10 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
   -moz-user-select: none;
-  border-top: 1px solid ThreeDHighlight;
-  border-right: 1px solid ThreeDShadow;
+  border-top: 1px solid #ECECEC;
+  border-right: 1px solid #6A6A6A;
   z-index: 1;
 }
 
@@ -271,11 +271,11 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
 }
 
 .button:hover {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 .button:hover:active {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
 .button[hidden] {
@@ -303,12 +303,12 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
   left: 48px; /* offset to account for toolbar width */
   z-index: 1000;
   visibility: hidden;
-  background: -moz-Dialog;
+  background: #CCCCDD;
   border: 2px solid;
-  -moz-border-top-colors   : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow ThreeDHighlight ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  ThreeDShadow    ThreeDFace;
+  -moz-border-top-colors   : ThreeDLightShadow #ECECEC ThreeDFace;
+  -moz-border-left-colors  : ThreeDLightShadow #ECECEC ThreeDFace;
+  -moz-border-right-colors : ThreeDDarkShadow  #6A6A6A    ThreeDFace;
+  -moz-border-bottom-colors: ThreeDDarkShadow  #6A6A6A    ThreeDFace;
 }
 
 .keep-open .dropdown-popup {

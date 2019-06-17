@@ -18,7 +18,7 @@ toolbarbutton {
   border: 1px solid transparent;
   padding: 3px;
   background-color: transparent;
-  color: -moz-DialogText;
+  color: #000;
 }
 
 .toolbarbutton-icon[label]:not([label=""]),
@@ -39,18 +39,22 @@ toolbarbutton:-moz-focusring {
   /* -moz-appearance looks redundant here but is necessary.
       Without it, the outline won't appear. */
   -moz-appearance: none;
-  outline: 1px dotted -moz-DialogText;
+  outline: 1px dotted #000;
   outline-offset: -2px;
 }
 
 toolbarbutton:hover:not([disabled="true"]) {
-  border-color: ThreeDHighlight ThreeDShadow ThreeDShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  color: #333366;
+  text-decoration: underline;
 }
 
 toolbarbutton:hover:active:not([disabled="true"]),
 toolbarbutton[open="true"]:hover,
 toolbarbutton[open="true"] {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  color: #333366;
+  text-decoration: none;
   padding-top: 4px;
   padding-bottom: 2px;
   padding-inline-start: 4px;
@@ -58,19 +62,17 @@ toolbarbutton[open="true"] {
 }
 
 toolbarbutton[disabled="true"] {
-  color: GrayText;
+  color: #6A6A6A;
   text-shadow: none;
 }
 
-@media (-moz-windows-classic) {
-  toolbarbutton[disabled="true"] {
-    color: ThreeDShadow;
-    text-shadow: 1px 1px ThreeDHighlight;
-  }
+toolbarbutton[disabled="true"] {
+  color: #6A6A6A;
+  text-shadow: 1px 1px #ECECEC;
 }
 
 toolbarbutton[checked="true"]:not([disabled="true"]) {
-  border-color: ThreeDShadow ThreeDHighlight ThreeDHighlight ThreeDShadow;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding-top: 4px;
   padding-bottom: 2px;
   padding-inline-start: 4px;

@@ -7,31 +7,28 @@
 richlistbox {
   -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
 }
 
 richlistbox[disabled="true"] {
-  color: GrayText;
+  color: #6A6A6A;
 }
 
 richlistitem[selected="true"] {
-  background-color: -moz-cellhighlight;
-  color: -moz-cellhighlighttext;
+  background-color: #808080;
+  color: #fff;
 }
 
 richlistbox:focus > richlistitem[selected="true"] {
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
 }
 
 richlistbox[seltype="multiple"]:focus > richlistitem[current="true"] {
-  outline: 1px dotted Highlight;
+  outline: 1px dotted #666699;
   outline-offset: -1px;
 }
 

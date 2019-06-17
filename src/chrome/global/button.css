@@ -14,13 +14,10 @@ button {
   -moz-appearance: none;
   margin: 1px 5px 2px 5px;
   min-width: 6.3em;
-  border: 3px solid;
-  -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow;
-  background-color: ThreeDFace;
-  color: ButtonText;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  background-color: #CCCCDD;
+  color: #000;
   text-shadow: none;
 }
 
@@ -39,13 +36,6 @@ button {
 
 /* .......... focused state .......... */
 
-button:focus {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight transparent;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDHighlight transparent;
-}
-
 button:-moz-focusring > .button-box {
   border: 1px dotted ThreeDDarkShadow;
 }
@@ -53,45 +43,50 @@ button:-moz-focusring > .button-box {
 /* .......... default state .......... */
 
 button[default="true"] {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDHighlight ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDHighlight ThreeDLightShadow;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+}
+
+button[default="true"] > .button-box {
+  font-weight: bold;
+  -moz-box-direction: reverse;
+  list-style-image: url("chrome://global/skin/arrow/return.gif");
+}
+
+button[default="true"][disabled="true"] > .button-box {
+  list-style-image: url("chrome://global/skin/arrow/return-dis.gif");
+}
+
+button[default="true"] > .button-box > .button-icon {
+  margin-inline-start: 2px;
+}
+
+/* .......... hover/open state .......... */
+
+button[open="true"] > .button-box .button-text,
+button:hover:not([disabled="true"]) > .button-box .button-text {
+  color: #333366;
+  text-decoration: underline;
 }
 
 /* .......... active/open/checked state .......... */
 
-button:hover:active,
+button:hover:active:not([disabled="true"]),
 button[open="true"],
-button[checked="true"] {
-  -moz-border-top-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow transparent;
-  -moz-border-left-colors: ThreeDDarkShadow ThreeDShadow transparent;
+button[checked="true"]:not([disabled="true"]) {
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
-button:hover:active > .button-box:-moz-system-metric(windows-classic),
-button[open="true"] > .button-box:-moz-system-metric(windows-classic),
-button[checked="true"] > .button-box:-moz-system-metric(windows-classic) {
-  padding-top: 2px;
-  padding-bottom: 1px;
-  padding-inline-start: 4px;
-  padding-inline-end: 3px;
+button:hover:active:not([disabled="true"]) > .button-box .button-text {
+  color: #333366;
+  text-decoration: none;
 }
 
 /* .......... disabled state .......... */
 
 button[disabled="true"] {
-  -moz-border-top-colors: transparent ThreeDHighlight ThreeDLightShadow !important;
-  -moz-border-right-colors: transparent ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-bottom-colors: transparent ThreeDDarkShadow ThreeDShadow !important;
-  -moz-border-left-colors: transparent ThreeDHighlight ThreeDLightShadow !important;
-  color: GrayText;
-}
-
-button[disabled="true"]:-moz-system-metric(windows-classic) {
-  color: ThreeDShadow;
-  text-shadow: 1px 1px ThreeDHighlight;
+  border-color: #6A6A6A;
+  color: #6A6A6A;
+  text-shadow: 1px 1px #ECECEC;
 }
 
 button[disabled="true"] > .button-box {
@@ -118,7 +113,7 @@ button[type="menu-button"] {
 }
 
 .button-menubutton-dropmarker {
-  margin: 1px 5px 3px -6px;
+  margin: 1px 5px 2px -5px;
 }
 
 /* ::::: plain buttons ::::: */

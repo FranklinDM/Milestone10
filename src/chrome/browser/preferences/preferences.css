@@ -98,7 +98,7 @@ radio[pane=paneSync] {
 }
 
 #cookieInfoBox {
-  border: 1px solid ThreeDShadow;
+  border: 1px solid #6A6A6A;
   border-radius: 0;
   margin: 4px;
   padding: 0;

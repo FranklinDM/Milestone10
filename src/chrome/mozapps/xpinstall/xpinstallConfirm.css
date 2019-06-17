@@ -7,16 +7,13 @@
 }
 
 #itemList {
-  -moz-appearance: listbox;
+  -moz-appearance: none;
   margin: 3px 4px 10px 4px;
   height: 14em;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
 }
 
 #itemWarningIntro {
@@ -68,8 +65,8 @@ installitem {
   -moz-appearance: none;
   border: none;
   padding: 0;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background-color: #fff;
+  color: #000;
   margin-top: 1px;
   margin-bottom: 1px;
   margin-inline-start: 6px;

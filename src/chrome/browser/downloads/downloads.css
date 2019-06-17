@@ -33,7 +33,7 @@
 }
 
 #downloadsPanel[keyfocus] > #downloadsFooter > #downloadsHistory:focus {
-  outline: 1px -moz-dialogtext dotted;
+  outline: 1px #000 dotted;
   outline-offset: -1px;
 }
 
@@ -74,7 +74,7 @@ richlistitem[type="download"] {
 }
 
 #downloadsPanel[keyfocus] > #downloadsFooter > #downloadsSummary:focus {
-  outline: 1px -moz-dialogtext dotted;
+  outline: 1px #000 dotted;
   outline-offset: -5px;
 }
 
@@ -99,7 +99,7 @@ richlistitem[type="download"]:first-child {
 }
 
 #downloadsPanel[keyfocus] > #downloadsListBox:focus > richlistitem[type="download"][selected] {
-  outline: 1px -moz-dialogtext dotted;
+  outline: 1px #000 dotted;
   outline-offset: -1px;
 }
 

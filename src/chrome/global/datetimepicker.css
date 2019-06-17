@@ -21,16 +21,13 @@ datepicker, timepicker {
   -moz-appearance: none;
   cursor: text;
   margin-inline-end: 2px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   padding: 2px 0 3px 0;
   padding-inline-start: 4px;
   padding-inline-end: 2px;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  background-color: #fff;
+  color: #000;
 }
 
 .datetimepicker-input-subbox {
@@ -50,25 +47,23 @@ html|*.datetimepicker-input {
 }
 
 .datetimepicker-input-box[readonly="true"] {
-  background-color: -moz-Dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 .datetimepicker-input-box[disabled="true"] {
   cursor: default;
-  background-color: -moz-Dialog;
-  color: GrayText;
+  border-color: #6A6A6A;
+  background-color: #CCCCDD;
+  color: #6A6A6A;
 } 
 
 .datepicker-mainbox {
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
 }
 
 .datepicker-popupgrid > .datepicker-mainbox {
@@ -86,8 +81,8 @@ html|*.datetimepicker-input {
 }
 
 .datepicker-gridlabel[selected="true"] {
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
 }
 
 .datepicker-button {

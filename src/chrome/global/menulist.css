@@ -14,13 +14,10 @@
 menulist {
   -moz-appearance: none;
   margin: 2px 4px;
-  border: 2px solid;
-  -moz-border-top-colors: ThreeDShadow ThreeDDarkShadow;
-  -moz-border-right-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-bottom-colors: ThreeDHighlight ThreeDLightShadow;
-  -moz-border-left-colors: ThreeDShadow ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
+  background-color: #fff;
+  color: #000;
   text-shadow: none;
 }
 
@@ -46,25 +43,19 @@ menulist {
 
 .menulist-description {
   font-style: italic;
-  color: GrayText;
+  color: #6A6A6A;
   margin-inline-start: 1ex !important;
 }
 
 /* ..... dropmarker ..... */
 
 menulist[disabled="true"]:hover:active > .menulist-dropmarker {
-  -moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
   padding: 1px;
 }
 
 menulist[open="true"] > .menulist-dropmarker {
-  -moz-border-top-colors: ThreeDShadow ThreeDFace;
-  -moz-border-right-colors: ThreeDShadow ThreeDFace;
-  -moz-border-bottom-colors: ThreeDShadow ThreeDFace;
-  -moz-border-left-colors: ThreeDShadow ThreeDFace;
+  border-color: #6A6A6A;
   padding-top: 2px;
   padding-bottom: 0px;
   padding-inline-start: 2px;
@@ -74,8 +65,8 @@ menulist[open="true"] > .menulist-dropmarker {
 /* ..... focused state ..... */
 
 menulist:focus:not([open="true"]) > .menulist-label-box {
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
 }
 
 menulist:-moz-focusring:not([open="true"]) > .menulist-label-box {
@@ -85,8 +76,8 @@ menulist:-moz-focusring:not([open="true"]) > .menulist-label-box {
 /* ..... disabled state ..... */
 
 menulist[disabled="true"] {
-  background-color: -moz-Dialog;
-  color: GrayText;
+  background-color: #CCCCDD;
+  color: #6A6A6A;
 }
 
 /* ::::: editable menulists ::::: */
