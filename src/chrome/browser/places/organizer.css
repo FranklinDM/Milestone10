@@ -20,27 +20,15 @@
 #back-button {
   -moz-image-region: rect(0, 16px, 16px, 0);
 }
-#back-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(16px 16px 32px 0px);
-}
 #back-button[disabled="true"] {
   -moz-image-region: rect(32px 16px 48px 0px);
-}
-#back-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 16px 64px 0px);
 }
 
 #forward-button {
   -moz-image-region: rect(0, 32px, 16px, 16px);
 }
-#forward-button:not([disabled="true"]):hover {
-  -moz-image-region: rect(16px 32px 32px 16px);
-}
 #forward-button[disabled="true"] {
   -moz-image-region: rect(32px 32px 48px 16px);
-}
-#forward-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 32px 64px 16px);
 }
 
 #back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
