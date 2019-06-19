@@ -65,6 +65,19 @@
   background-color: #CCCCDD;
 }
 
+/*
+ * Attempt to hide the border when tabs are on the titlebar 
+ * and restore when the menu bar is permanently visible.
+ * XXX: May cause issues when the menu bar is placed elsewhere.
+ */
+#main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] {
+  border-top-style: none;
+}
+
+#main-window[sizemode="maximized"] #navigator-toolbox[tabsontop="true"] #toolbar-menubar:not([autohide="true"]) {
+  border-top: 1px solid #9999CC;
+}
+
 @media not all and (-moz-windows-compositor) {
   #main-window[tabsintitlebar] #titlebar:-moz-lwtheme {
     visibility: hidden;
