@@ -270,22 +270,6 @@ toolbar[brighttext] #downloads-indicator:not([counter]) > #downloads-indicator-a
   background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 0, 144, 24, 120) center no-repeat;
 }
 
-#downloads-indicator[open="true"] #downloads-indicator-icon,
-#downloads-indicator:hover #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-image), 24, 144, 48, 120) center no-repeat;
-}
-toolbar[brighttext] #downloads-indicator[open="true"] #downloads-indicator-icon,
-toolbar[brighttext] #downloads-indicator:hover #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 24, 144, 48, 120) center no-repeat;
-}
-
-#downloads-indicator:hover:active #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-image), 72, 144, 96, 120) center no-repeat;
-}
-toolbar[brighttext] #downloads-indicator:hover:active #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 72, 144, 96, 120) center no-repeat;
-}
-
 #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,
 #downloads-indicator[attention] > #downloads-indicator-anchor > #downloads-indicator-icon {
   background-image: url("chrome://browser/skin/downloads/download-glow-large.png");
@@ -300,22 +284,6 @@ toolbar[iconsize="small"] #downloads-indicator:not([counter]) > #downloads-indic
 toolbar[iconsize="small"][brighttext] #downloads-indicator-icon,
 toolbar[iconsize="small"][brighttext] #downloads-indicator:not([counter]) > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter {
   background: -moz-image-rect(var(--toolbarbutton-inverted-image), 0, 96, 16, 80) center no-repeat;
-}
-
-toolbar[iconsize="small"] #downloads-indicator[open="true"] #downloads-indicator-icon,
-toolbar[iconsize="small"] #downloads-indicator:hover #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-image), 16, 96, 32, 80) center no-repeat;
-}
-toolbar[iconsize="small"][brighttext] #downloads-indicator[open="true"] #downloads-indicator-icon,
-toolbar[iconsize="small"][brighttext] #downloads-indicator:hover #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-inverted-image), 16, 96, 32, 80) center no-repeat;
-}
-
-toolbar[iconsize="small"] #downloads-indicator:hover:active #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-image), 48, 96, 64, 80) center no-repeat;
-}
-toolbar[iconsize="small"][brighttext] #downloads-indicator:hover:active #downloads-indicator-icon {
-  background: -moz-image-rect(var(--toolbarbutton-inverted-image), 48, 96, 64, 80) center no-repeat;
 }
 
 toolbar[iconsize="small"] #downloads-indicator:not([counter])[attention] > #downloads-indicator-anchor > #downloads-indicator-progress-area > #downloads-indicator-counter,

@@ -177,20 +177,6 @@ toolbar[brighttext] #status4evar-download-button #status4evar-download-icon {
   background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 0, 144, 24, 120) center no-repeat;
 }
 
-#status4evar-download-button:hover #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-image), 24, 144, 48, 120) center no-repeat;
-}
-toolbar[brighttext] #status4evar-download-button:hover #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 24, 144, 48, 120) center no-repeat;
-}
-
-#status4evar-download-button:hover:active #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-image), 72, 144, 96, 120) center no-repeat;
-}
-toolbar[brighttext] #status4evar-download-button:hover:active #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-large-inverted-image), 72, 144, 96, 120) center no-repeat;
-}
-
 #status4evar-download-button[attention] #status4evar-download-icon {
   background-image: url("chrome://browser/skin/downloads/download-glow-large.png");
 }
@@ -207,20 +193,6 @@ toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-ico
 }
 toolbar[iconsize="small"][brighttext] #status4evar-download-button #status4evar-download-icon {
   background: -moz-image-rect(var(--toolbarbutton-inverted-image), 0, 96, 16, 80) center no-repeat;
-}
-
-toolbar[iconsize="small"] #status4evar-download-button:hover #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-image), 16, 96, 32, 80) center no-repeat;
-}
-toolbar[iconsize="small"][brighttext] #status4evar-download-button:hover #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-inverted-image), 16, 96, 32, 80) center no-repeat;
-}
-
-toolbar[iconsize="small"] #status4evar-download-button:hover:active #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-image), 48, 96, 64, 80) center no-repeat;
-}
-toolbar[iconsize="small"][brighttext] #status4evar-download-button:hover:active #status4evar-download-icon {
-  background: -moz-image-rect(var(--toolbarbutton-inverted-image), 48, 96, 64, 80) center no-repeat;
 }
 
 toolbar[iconsize="small"] #status4evar-download-button[attention] #status4evar-download-icon {
