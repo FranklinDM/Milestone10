@@ -104,11 +104,15 @@
   background-clip: padding-box;
   border: 1px solid #6A6A6A;
   border-top: none;
-  color: #fff;
   font-weight: bold;
   padding: 0 1.5em .05em;
   margin: 1px 1px 2px;
   box-shadow: inset 0px 0px 0px 1px #ECECEC;
+}
+
+#appmenu-button > .button-box .button-text {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (-moz-windows-classic) {
@@ -120,16 +124,16 @@
 /* app menu button - regular */
 
 #appmenu-button {
-  background: rgb(10,98,215);
+  background: #666699;
 }
 
 #appmenu-button:hover:not(:active):not([open]) {
-  background: rgb(69,170,246);
+  background: #8080BF;
 }
 
 #appmenu-button:hover:active,
 #appmenu-button[open] {
-  background: rgb(0,74,209);
+  background: #4C4C72;
 }
 
 /* app menu button - private browsing mode */
