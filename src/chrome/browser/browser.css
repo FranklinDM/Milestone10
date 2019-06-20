@@ -23,6 +23,7 @@
 
   --tab-border-radius: 0px;
   --tab-selected-highlight: rgba(255,255,255,.7);
+  --tab-min-height: 28px;
 
   --window-text-color: currentColor;
 }
@@ -1484,7 +1485,7 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 /* Tabstrip */
 
 #TabsToolbar {
-  min-height: 0;
+  min-height: var(--tab-min-height);
   padding: 0;
 }
 
