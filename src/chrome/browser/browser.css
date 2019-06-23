@@ -1565,10 +1565,6 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
   list-style-image: url("chrome://browser/skin/tabbrowser/connecting.png");
 }
 
-.tab-throbber[progress] {
-  list-style-image: url("chrome://browser/skin/tabbrowser/loading.png");
-}
-
 .tab-throbber[pinned],
 .tab-icon-image[pinned] {
   margin-inline-start: 5px;
