@@ -1,5 +1,5 @@
 # Milestone 10
-A theme that features the look of early Mozilla builds (M4-M10), using a mix of the original ones and a few that are created from scratch in order to achieve a nice look on high resolution screens.
+A theme that features the look of early Mozilla builds (M4-M10), using a mix of the original ones and a few that are created from scratch in order to achieve a nice look.
 
 This theme uses [Classic Base](https://github.com/FranklinDM/Classic-Base) as a base.
 
