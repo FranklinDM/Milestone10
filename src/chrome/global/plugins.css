@@ -1,0 +1,88 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== plugins.css =====================================================
+   == Styles used by the about:plugins page.
+   ======================================================================= */
+
+body {
+  background-color: #CCCCDD;
+  color: #000;
+  font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
+}
+
+div#outside {
+ text-align: justify;
+ width: 90%;
+ margin-left: 5%;
+ margin-right: 5%;
+}
+
+#plugs {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+#noplugs {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.plugname {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: large;
+  text-align: start;
+  font-weight: bold;
+}
+
+dl {
+  margin: 0px 0px 3px 0px;
+}
+
+table {
+  background-color: #ebebeb;
+  color: #000;
+  font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
+  text-align: start;
+  width: 100%;
+  border: 2px solid #6A6A6A;
+  border-spacing: 0px;
+}
+
+th, td {
+  border: none;
+  padding: 3px;
+}
+
+th {
+  text-align: center;
+  background-color: #666699;
+  color: #fff;
+}
+
+th + th,
+td + td {
+  border-inline-start: 1px dotted #6A6A6A; 
+}
+
+td {
+  text-align: start;
+  border-top: 1px dotted #6A6A6A;
+}
+
+th.type, th.suff {
+  width: 25%;
+}
+
+th.desc {
+  width: 50%;
+}
+
+.notice {
+  background: #808080;
+  border: 1px solid #6A6A6A;
+  padding: 10px;
+}

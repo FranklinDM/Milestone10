@@ -66,6 +66,7 @@ th.column {
 td {
   text-align: start;
   border-color: var(--in-content-table-border-dark-color);
+  background-color: #ebebeb;
 }
 
 .prefs-table {
