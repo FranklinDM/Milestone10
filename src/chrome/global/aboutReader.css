@@ -47,8 +47,10 @@ body.serif .remove-button  {
 }
 
 .container {
+  --font-size: 12;
   max-width: 30em;
   margin: 0 auto;
+  font-size: var(--font-size);
 }
 
 .container.font-size1 {
@@ -251,8 +253,7 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
   list-style: none;
   background-color: #CCCCDD;
   -moz-user-select: none;
-  border-top: 1px solid #ECECEC;
-  border-right: 1px solid #6A6A6A;
+  border-right: 1px solid #9999CC;
   z-index: 1;
 }
 
@@ -266,6 +267,7 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
 
 .toolbar .button {
   width: 40px;
+  background-color: transparent;
   background-position: center;
   border: 1px solid transparent;
 }
@@ -274,6 +276,7 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
   border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
+.dropdown.open .button,
 .button:hover:active {
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
@@ -304,11 +307,8 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
   z-index: 1000;
   visibility: hidden;
   background: #CCCCDD;
-  border: 2px solid;
-  -moz-border-top-colors   : ThreeDLightShadow #ECECEC ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow #ECECEC ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  #6A6A6A    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  #6A6A6A    ThreeDFace;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 .keep-open .dropdown-popup {
@@ -429,17 +429,16 @@ body:not(.loaded) .toolbar:-moz-locale-dir(rtl) {
 .font-type-buttons > button:hover,
 .content-width-buttons > button:hover,
 .line-height-buttons > button:hover {
-  background-color: #ebebeb;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
-.dropdown.open,
 .font-size-buttons > button:active,
 .font-size-buttons > button.selected,
 .content-width-buttons > button:active,
 .content-width-buttons > button.selected,
 .line-height-buttons > button:active,
 .line-height-buttons > button.selected {
-  background-color: #dadada;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Only used on Android */
