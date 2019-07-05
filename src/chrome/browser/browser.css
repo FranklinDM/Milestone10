@@ -159,7 +159,6 @@
 
 #appmenu-button > .button-box > .button-menu-dropmarker {
   list-style-image: url(appmenu-dropmarker.png);
-  filter: invert(100%);
   width: auto;
   height: auto;
   padding: 0;
@@ -178,14 +177,12 @@
 
 .appmenu-edit-button {
   -moz-appearance: none;
-  border: 1px solid transparent;
   padding: 2px;
   background: transparent;
-  border-radius: 3px;
 }
 
 .appmenu-edit-button[disabled="true"] {
-  opacity: .3;
+  filter: grayscale(1);
 }
 
 #appmenuPrimaryPane {
@@ -531,7 +528,7 @@ toolbar[mode=full] .toolbarbutton-1:not([type=menu-button]) {
 
 toolbar[mode=full] .toolbarbutton-1,
 toolbar[mode=full] .toolbarbutton-1 > .toolbarbutton-menubutton-button {
-  min-width: 57px;
+  min-width: 45px;
 }
 
 #navigator-toolbox[iconsize=large][mode=icons] > #nav-bar .toolbarbutton-1,
@@ -1076,15 +1073,6 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   padding: 2px 2px;
 }
 
-.urlbar-icon:hover {
-  background-image: radial-gradient(circle closest-side, hsla(200,100%,70%,.3), hsla(200,100%,70%,0));
-}
-
-.urlbar-icon[open="true"],
-.urlbar-icon:hover:active {
-  background-image: radial-gradient(circle closest-side, hsla(200,100%,70%,.1), hsla(200,100%,70%,0));
-}
-
 #urlbar-search-splitter {
   min-width: 6px;
   margin-inline-start: -3px;
@@ -1119,25 +1107,15 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedIdentity {
   color: hsl(92,100%,20%);
   margin-inline-end: 4px;
-  background-image: -moz-linear-gradient(hsla(92,81%,16%,0),
-                                         hsla(92,81%,16%,.08) 25%,
-                                         hsla(92,81%,16%,.08) 75%,
-                                         hsla(92,81%,16%,0));
-  background-position: right;
-  background-repeat: no-repeat;
-  border-right: 1px solid hsla(92,100%,20%,0.5);
+  background-color: #A2D8AC;
+  border-right: 1px solid #638C3F;
 }
 
 #urlbar[pageproxystate="valid"] > #identity-box.verifiedDomain {
   color: rgb(0,79,168);
   margin-inline-end: 4px;
-  background-image: -moz-linear-gradient(rgba(0,79,168,0),
-                                         rgba(0,79,168,.08) 25%,
-                                         rgba(0,79,168,.08) 75%,
-                                         rgba(0,79,168,0));
-  background-position: right;
-  background-repeat: no-repeat;
-  border-right: 1px solid rgba(0,79,168,0.5);
+  background-color: #ADB9DB;
+  border-right: 1px solid #1A4CD8;
 }
 
 #identity-box.verifiedIdentity:-moz-locale-dir(rtl) {
@@ -1162,55 +1140,11 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   padding-inline-end: 5px;
 }
 
-/* Address bar shading for SSL */
-
-#urlbar[https_color="all"][security_level="broken"],
-#urlbar[https_color="all"][security_level="low"] {
-  box-shadow: inset 0 0 2px rgb(168,0,0);
-}
-
-#urlbar[https_color="all"][security_level="mixed"],
-#urlbar[https_color="secure-mixed"][security_level="mixed"] {
-  box-shadow: inset 0 0 2px rgb(168,79,0);
-}
-
-#urlbar[https_color="all"][security_level="high"],
-#urlbar[https_color="secure-mixed"][security_level="high"],
-#urlbar[https_color="secure-only"][security_level="high"] {
-  box-shadow: inset 0 0 2px rgb(0,79,168);
-}
-
-#urlbar[https_color="all"][security_level="ev"],
-#urlbar[https_color="secure-mixed"][security_level="ev"],
-#urlbar[https_color="secure-only"][security_level="ev"] {
-  box-shadow: inset 0 0 2px rgb(0,168,0);
-}
-
-#urlbar[https_color="all"][security_level="broken"]:not(:-moz-lwtheme),
-#urlbar[https_color="all"][security_level="low"]:not(:-moz-lwtheme) {
-  box-shadow: inset 0 0 3px rgba(168,0,0,0.8);
-}
-
-#urlbar[https_color="all"][security_level="mixed"]:not(:-moz-lwtheme),
-#urlbar[https_color="secure-mixed"][security_level="mixed"]:not(:-moz-lwtheme) {
-  box-shadow: inset 0 0 3px rgba(168,79,0,0.8);
-}
-
-#urlbar[https_color="all"][security_level="high"]:not(:-moz-lwtheme),
-#urlbar[https_color="secure-mixed"][security_level="high"]:not(:-moz-lwtheme),
-#urlbar[https_color="secure-only"][security_level="high"]:not(:-moz-lwtheme) {
-  box-shadow: inset 0 0 3px rgba(0,79,168,0.8);
-}
-
-#urlbar[https_color="all"][security_level="ev"]:not(:-moz-lwtheme),
-#urlbar[https_color="secure-mixed"][security_level="ev"]:not(:-moz-lwtheme),
-#urlbar[https_color="secure-only"][security_level="ev"]:not(:-moz-lwtheme) {
-  box-shadow: inset 0 0 3px rgba(0,168,0,0.8);
-}
-
 /* Location bar dropmarker */
 .urlbar-history-dropmarker {
   margin-inline-end: -2px;
+  /* Dropmarker should appear as the last element in the urlbar */
+  -moz-box-ordinal-group: 100;
 }
 
 /* page proxy icon */
@@ -1321,8 +1255,7 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 }
 
 .autocomplete-treebody::-moz-tree-cell-text(suggesthint, treecolAutoCompleteComment),
-.autocomplete-treebody::-moz-tree-cell-text(suggestfirst, treecolAutoCompleteComment)
-{
+.autocomplete-treebody::-moz-tree-cell-text(suggestfirst, treecolAutoCompleteComment) {
   color: #6A6A6A;
   font-size: smaller;
 }
@@ -1347,15 +1280,15 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 }
 
 #urlbar-reload-button {
-  -moz-image-region: rect(0, 14px, 14px, 0);
+  -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 #urlbar-reload-button:not([disabled]):hover {
-  -moz-image-region: rect(14px, 14px, 28px, 0);
+  -moz-image-region: rect(16px, 16px, 32px, 0);
 }
 
 #urlbar-reload-button:not([disabled]):hover:active {
-  -moz-image-region: rect(28px, 14px, 42px, 0);
+  -moz-image-region: rect(32px, 16px, 48px, 0);
 }
 
 #urlbar-reload-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
@@ -1364,17 +1297,17 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 
 #go-button,
 #urlbar-go-button {
-  -moz-image-region: rect(0, 42px, 14px, 28px);
+  -moz-image-region: rect(0, 48px, 16px, 32px);
 }
 
 #go-button:hover,
 #urlbar-go-button:hover {
-  -moz-image-region: rect(14px, 42px, 28px, 28px);
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
 }
 
 #go-button:hover:active,
 #urlbar-go-button:hover:active {
-  -moz-image-region: rect(28px, 42px, 42px, 28px);
+  -moz-image-region: rect(32px, 48px, 48px, 32px);
 }
 
 #go-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
@@ -1383,15 +1316,15 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 }
 
 #urlbar-stop-button {
-  -moz-image-region: rect(0, 28px, 14px, 14px);
+  -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
 #urlbar-stop-button:not([disabled]):hover {
-  -moz-image-region: rect(14px, 28px, 28px, 14px);
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
 }
 
 #urlbar-stop-button:hover:active {
-  -moz-image-region: rect(28px, 28px, 42px, 14px);
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
 }
 
 /* popup blocker button */
@@ -2204,14 +2137,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 
 .KUI-panel {
   -moz-appearance: none;
-  background: rgba(27%,27%,27%,.9) url(KUI-background.png) repeat-x;
-  color: white;
   border-style: none;
-  border-radius: 20px;
-}
-
-.KUI-panel[level="top"] {
-  background-color: rgba(27%,27%,27%,.65);
 }
 
 .KUI-panel-closebutton {
@@ -2233,50 +2159,57 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 
 /* ::::: Ctrl-Tab and All Tabs Panels ::::: */
 
+/* Common between both panels */
+
+.KUI-panel,
+#ctrlTab-panel,
+#allTabs-panel {
+  border: 1px solid #9999CC;
+  background: #CCCCDD;
+  color: #CCCCFF;
+  font-size: 1.2em;
+}
+
+.ctrlTab-preview-inner,
+.allTabs-preview-inner {
+  border: 4px solid #666699;
+  background-color: #666699;
+}
+
+.ctrlTab-favicon[src],
+.allTabs-favicon[src] {
+  background-color: #666699;
+  width: 22px;
+  height: 22px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-inline-start: 3px;
+  padding-inline-end: 3px;
+  margin-top: 1px;
+  margin-inline-start: 1px;
+}
+
+.allTabs-preview:-moz-any(:hover, [closebuttonhover]) .allTabs-favicon[src],
+.allTabs-preview:-moz-any(:hover, [closebuttonhover]) > * > .allTabs-preview-inner,
+.ctrlTab-preview:focus .ctrlTab-favicon[src],
+.ctrlTab-preview:focus > * > .ctrlTab-preview-inner {
+  color: #000;
+  background-color: #AAAAFF;
+  border-color: #AAAAFF;
+}
+
 /* Ctrl-Tab */
 
 #ctrlTab-panel {
   padding: 20px 10px 10px;
-  font-weight: bold;
-  text-shadow: 0 0 1px rgb(27%,27%,27%), 0 0 2px rgb(27%,27%,27%);
-}
-
-.ctrlTab-favicon[src] {
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
-.ctrlTab-preview-inner > .tabPreview-canvas {
-  box-shadow: 1px 1px 2px rgb(12%,12%,12%);
 }
 
 .ctrlTab-preview:not(#ctrlTab-showAll) > * > .ctrlTab-preview-inner > .tabPreview-canvas {
   margin-bottom: 2px;
 }
 
-.ctrlTab-preview-inner {
-  padding-bottom: 10px;
-}
-
-#ctrlTab-showAll:not(:focus) > * > .ctrlTab-preview-inner {
+#ctrlTab-showAll > * > .ctrlTab-preview-inner {
   padding: 10px;
-  background-color: rgba(255,255,255,.2);
-  border-radius: .5em;
-}
-
-.ctrlTab-preview:focus > * > .ctrlTab-preview-inner {
-  color: white;
-  background-color: rgba(0,0,0,.6);
-  text-shadow: none;
-  padding: 8px;
-  border: 2px solid white;
-  border-radius: .5em;
-}
-
-.ctrlTab-preview:not(#ctrlTab-showAll):focus > * > .ctrlTab-preview-inner {
-  margin: -10px -10px 0;
 }
 
 #ctrlTab-showAll {
@@ -2288,9 +2221,6 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #allTabs-panel {
   padding-bottom: 10px;
   -moz-appearance: none;
-  border: none;
-  background: #CCCCDD;
-  color: #000;
 }
 
 #allTabs-meta {
@@ -2311,31 +2241,8 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   list-style-image: url("chrome://global/skin/icons/close.png");
 }
 
-.allTabs-favicon[src] {
-  background-color: #CCCCDD;
-  width: 22px;
-  height: 22px;
-  padding-top: 1px;
-  padding-bottom: 5px;
-  padding-inline-start: 1px;
-  padding-inline-end: 5px;
-  margin-top: -2px;
-  margin-inline-start: -2px;
-  border-bottom-right-radius: 4px;
-}
-
-.allTabs-favicon[src]:-moz-locale-dir(rtl) {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
-}
-
 .allTabs-preview-inner > .tabPreview-canvas {
   background-color: rgb(60%,60%,60%);
-  box-shadow: 0 0 1.5px #6A6A6A;
-}
-
-.allTabs-preview:not(:hover):not([closebuttonhover]) > html|canvas {
-  opacity: .8;
 }
 
 .allTabs-preview:focus > * > .allTabs-preview-inner {
@@ -2979,7 +2886,7 @@ toolbar[brighttext] #addonbar-closebutton {
     background-color: #556;
   }
   
-  /* Make these toolbars transparent and removes borders that overlap the caption buttons when the window is maximized nad tabs are on top */
+  /* Make these toolbars transparent and removes borders that overlap the caption buttons when the window is maximized and tabs are on top */
   #main-window[sizemode="maximized"][tabsontop=true] #toolbar-menubar[autohide="true"]:not(:-moz-lwtheme),
   #main-window[sizemode="maximized"][tabsontop=true] #toolbar-menubar[autohide="true"] ~ #TabsToolbar:not(:-moz-lwtheme) {
     background-color: transparent !important;
@@ -3057,17 +2964,6 @@ toolbar[brighttext] #addonbar-closebutton {
     /* align with the browser's side borders */
     padding-left: 1px;
     padding-right: 1px;
-  }
-
-  #allTabs-panel,
-  #ctrlTab-panel {
-    background: transparent;
-    -moz-appearance: -moz-win-glass;
-    border-radius: 0;
-    border: none;
-    font: normal 1.2em "Segoe UI";
-    color: black;
-    text-shadow: white -1px -1px .35em, white -1px 1px .35em, white 1px 1px .35em, white 1px -1px .35em;
   }
 }
 

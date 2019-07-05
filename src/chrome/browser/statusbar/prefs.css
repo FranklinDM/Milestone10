@@ -17,7 +17,7 @@ radio[pane="status4evar-pane-progress"] {
 }
 
 radio[pane="status4evar-pane-download"] {
-  list-style-image: url("chrome://mozapps/skin/downloads/downloadIcon.png");
+  list-style-image: url("chrome://browser/skin/downloads/download-summary.png");
 }
 
 radio[pane="status4evar-pane-addonbar"] {

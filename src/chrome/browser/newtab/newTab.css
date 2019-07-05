@@ -96,7 +96,7 @@
   margin-inline-end: 20px;
   background-color: #404060;
   border: 1px solid #666699;
-  transition: border-color 100ms ease-out;
+  transition: none;
 }
 
 .newtab-cell:empty {
@@ -109,6 +109,10 @@
 
 .newtab-cell:hover:not(:empty):not([dragged]) {
   border-color: #AAAAFF;
+}
+.newtab-cell:hover:not(:empty):not([dragged]) .newtab-title {
+  background-color: #AAAAFF;
+  color: #000;
 }
 
 /* SITES */
@@ -165,6 +169,7 @@
   padding: 1px 2px 3px;
   border: none;
   background: transparent url(chrome://browser/skin/newtab/controls.png);
+  transition: none;
   top: 4px;
 }
 
@@ -196,7 +201,7 @@
   background-position: -96px 0;
 }
 
-.newtab-site[pinned] .newtab-control-pin:active
+.newtab-site[pinned] .newtab-control-pin:active,
 .newtab-control-pin[pinned]:active {
   background-position: -120px 0;
 }
@@ -256,12 +261,12 @@
   border: 1px solid;
   border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
   background-color: #CCCCDD !important;
-  color: #6A75B6 !important;
   transition: none;
 }
 #searchSubmit:hover {
   cursor: default;
   border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC !important;
+  color: #6A75B6 !important;
 }
 #searchSubmit:hover:active {
   border-color: #6A6A6A !important;

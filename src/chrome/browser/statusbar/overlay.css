@@ -128,6 +128,10 @@ splitter.status4evar-status-splitter:not(:hover) {
   background-color: transparent;
 }
 
+#status4evar-progress-bar:not([s4estyle="true"]) > .progress-bar {
+  background-image: url("chrome://global/skin/progressmeter/indeterminate.gif");
+}
+
 #status4evar-progress-bar[s4estyle="true"] > .progress-bar {
   border-right: 1px solid rgba(0,0,0,.2);
 }
