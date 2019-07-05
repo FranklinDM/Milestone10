@@ -23,7 +23,6 @@ progressmeter {
   -moz-appearance: none;
   min-width: 0px;
   background-color: #8080C0;
-  background-image: url("chrome://global/skin/progressmeter/indeterminate.gif");
 }
 
 progressmeter[mode="undetermined"] {
