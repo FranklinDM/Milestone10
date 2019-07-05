@@ -77,11 +77,8 @@ panel[type="arrow"][side="right"] {
   background: #CCCCDD;
   background-clip: padding-box;
   margin: 4px;
-  border: 2px solid;
-  -moz-border-top-colors   : ThreeDLightShadow #ECECEC ThreeDFace;
-  -moz-border-left-colors  : ThreeDLightShadow #ECECEC ThreeDFace;
-  -moz-border-right-colors : ThreeDDarkShadow  #6A6A6A    ThreeDFace;
-  -moz-border-bottom-colors: ThreeDDarkShadow  #6A6A6A    ThreeDFace;
+  border: 1px solid;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 .panel-arrow[side="top"],
@@ -132,9 +129,6 @@ tooltip {
 }
 
 tooltip[titletip="true"] {
- /* See bug 32157 comment 128
-  * margin: -2px 0px 0px -3px;
-  */
   max-width: none;
 }
 	
