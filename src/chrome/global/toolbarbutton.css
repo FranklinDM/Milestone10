@@ -171,18 +171,19 @@ toolbarbutton[type="menu-button"][checked="true"]:not([disabled="true"]) .toolba
 
 .toolbarbutton-menubutton-dropmarker {
   -moz-appearance: none;
-  padding: 3px 7px;
-  border-color: transparent;
+  padding: 3px 4px;
+  border: 1px solid transparent;
   background-color: transparent;
   width: auto;
 }
 
+toolbarbutton[type="menu-button"][open="true"]:not([checked="true"]):not([disabled="true"]) .toolbarbutton-menubutton-button,
+toolbarbutton[type="menu-button"]:hover:not([checked="true"]):not(:active):not([disabled="true"]) .toolbarbutton-menubutton-button,
 toolbarbutton[type="menu-button"]:hover:not([disabled="true"]) .toolbarbutton-menubutton-dropmarker {
-  border: 1px solid;
   border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
+  color: #333366;
 }
 
 toolbarbutton[type="menu-button"][open="true"]:not([disabled="true"]) .toolbarbutton-menubutton-dropmarker {
-  border: 1px solid;
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
