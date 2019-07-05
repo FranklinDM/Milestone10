@@ -131,6 +131,11 @@
   list-style-image: url("chrome://mozapps/skin/extensions/utilities.png");
   margin-inline-end: 0;
   margin-bottom: 0;
+  border-color: transparent;
+}
+
+#alertSettings:hover:not([disabled="true"]) {
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 #alertSettings > .button-box {
