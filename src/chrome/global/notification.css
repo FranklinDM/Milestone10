@@ -8,8 +8,7 @@ notification {
   color: InfoText;
   background-color: InfoBackground;
   text-shadow: none;
-  border-top: 1px solid #6A6A6A;
-  border-bottom: 1px solid #6A6A6A;
+  border-top: 1px solid #9999CC;
 }
 
 notificationbox[notificationside="top"] > notification {
@@ -26,8 +25,13 @@ notification[type="info"] {
 }
 
 notification[type="critical"] {
-  color: white;
-  background-image: linear-gradient(rgb(212,0,0), rgb(152,0,0));
+  color: #fff;
+  background-image: #7F0000;
+}
+
+/* Override incorrect styling of notification bars with 'outset' class */
+.notification-inner.outset {
+  border: none !important;
 }
 
 .messageText > .text-link {
@@ -63,6 +67,7 @@ notification[type="critical"] {
 }
 
 .messageCloseButton > .toolbarbutton-icon {
+  margin-inline-start: 5px;
   margin-inline-end: 5px;
 }
 
