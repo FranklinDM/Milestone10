@@ -28,7 +28,7 @@ page,
 dialog,
 wizard,
 prefwindow {
-  -moz-appearance: window;
+  -moz-appearance: none;
   background-color: #CCCCDD;
   color: #000;
   font: 3mm Tahoma, Arial, Helvetica, message-box, sans-serif;
