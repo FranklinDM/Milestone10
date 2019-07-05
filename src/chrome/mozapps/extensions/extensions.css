@@ -11,12 +11,12 @@
 
 #back-btn:-moz-locale-dir(ltr),
 #forward-btn:-moz-locale-dir(rtl) {
-  -moz-image-region: rect(0, 18px, 18px, 0);
+  -moz-image-region: rect(0, 16px, 16px, 0);
 }
 
 #back-btn:-moz-locale-dir(rtl),
 #forward-btn:-moz-locale-dir(ltr) {
-  -moz-image-region: rect(0, 36px, 18px, 18px);
+  -moz-image-region: rect(0, 32px, 16px, 16px);
 }
 
 
@@ -303,8 +303,10 @@
 .sorter[checkState="1"],
 .sorter[checkState="2"] {
   /* set to important because greasemonkey overrides this selector */
-  background-color: #C0C0C0 !important;
+  background-color: transparent !important;
   color: #000 !important;
+  border: 1px solid;
+  border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
   box-shadow: none !important;
 }
 
@@ -568,8 +570,8 @@
 }
 
 .addon[selected] {
-  background-color: rgb(148, 172, 204);
-  color: black;
+  background-color: #DDDDFF;
+  color: #000;
 }
 
 .addon[active="false"][selected] .name-container {
@@ -719,17 +721,14 @@
 }
 
 #detail-contributions {
-  border-radius: 5px;
-  border: 1px solid #D2DBE8;
   margin-bottom: 2em;
   padding: 1em;
-  background-color: #F3F7FB;
+  background-color: #6B76B4;
 }
 
 #detail-contrib-description {
   font-style: italic;
-  margin-bottom: 1em;
-  color: #373D48;
+  color: #fff;
 }
 
 #detail-contrib-suggested {
@@ -738,14 +737,11 @@
 }
 
 #detail-contrib-btn {
-  -moz-appearance: none;
   color: #FFF;
   border: 1px solid #3A4EEE;
-  border-radius: 3px;
   list-style-image: url("chrome://mozapps/skin/extensions/heart.png");
   background-color: #2F73EF;
-  background-image: linear-gradient(rgba(251, 252, 253, 0.70), rgba(246, 247, 248, 0.27) 49%, 
-                                    rgba(231, 232, 233, 0.25) 51%, rgba(225, 226, 229, 0.1));
+  text-shadow: none;
 }
 
 #detail-contrib-btn .button-box {
@@ -759,19 +755,10 @@
 #detail-contrib-btn:not(:active):hover {
   border-color: #4271FF;
   background-color: #0459F7;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1),
-              0 0 3.5px hsl(190, 90%, 80%);
-  transition: background-color .4s ease-in,
-              border-color .3s ease-in,
-              box-shadow .3s ease-in;
 }
 
 #detail-contrib-btn:active:hover {
   background-color: #8FA1C1;
-  border-color: rgba(0, 0, 0, 0.65) rgba(0, 0, 0, 0.55) rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.4) inset,
-              0 0 2px rgba(0, 0, 0, 0.4) inset,
-              0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 #detail-grid {
