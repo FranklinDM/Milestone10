@@ -439,7 +439,7 @@ menuitem.bookmark-item {
   -moz-image-region: auto;
 }
 
-.bookmark-item[container][query][open] {
+.bookmark-item[container][query][open]:not(:-moz-any([tagContainer], [dayContainer], [hostContainer])) {
   list-style-image: url("chrome://browser/skin/places/query-open.png");
 }
 
