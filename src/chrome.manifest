@@ -2,3 +2,4 @@ skin	global			milestone10		chrome/global/
 skin	browser			milestone10		chrome/browser/
 skin	mozapps			milestone10		chrome/mozapps/
 skin	communicator	milestone10		chrome/communicator/
+skin	ambassador		milestone10		chrome/ambassador/
