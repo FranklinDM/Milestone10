@@ -5,6 +5,7 @@
 @import url("chrome://global/skin/");
 @import url("chrome://browser/skin/devtools/browser.css");
 @import url("chrome://browser/skin/padlock.css");
+@import url("chrome://browser/skin/addons.css");
 @import url("chrome://global/skin/throbber.css");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");

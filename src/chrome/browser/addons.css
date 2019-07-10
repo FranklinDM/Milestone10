@@ -1,0 +1,36 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+/* ::::: Reader View ::::: */
+
+/* Large icon size (24px) */
+#reader-mode-button {
+  list-style-image: url("chrome://browser/skin/addons/readerview-24.png") !important;
+}
+#reader-mode-button,
+#reader-mode-button[state="enabled"],
+#reader-mode-button[state="active"] {
+  -moz-image-region: rect(0px 24px 24px 0px) !important;
+}
+#reader-mode-button[disabled="true"] {
+  -moz-image-region: rect(24px 24px 48px 0px) !important;
+}
+
+/* Small icon size (16px) */
+toolbar[iconsize="small"] #reader-mode-button {
+  list-style-image: url("chrome://browser/skin/addons/readerview-16.png") !important;
+}
+toolbar[iconsize="small"] #reader-mode-button,
+toolbar[iconsize="small"] #reader-mode-button[state="enabled"],
+toolbar[iconsize="small"] #reader-mode-button[state="active"] {
+  -moz-image-region: rect(0px 16px 16px 0px) !important;
+}
+toolbar[iconsize="small"] #reader-mode-button[disabled="true"] {
+  -moz-image-region: rect(16px 16px 32px 0px);
+}
+
+/* Location Bar icon (16px) */
+#reader-mode-button-fixed {
+  list-style-image: url("chrome://browser/skin/addons/readerview-16-urlbar.png") !important;
+}
