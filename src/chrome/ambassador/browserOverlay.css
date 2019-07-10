@@ -7,6 +7,6 @@ toolbar[iconsize="small"] #tb-ambassador-open {
   list-style-image: url("chrome://ambassador/skin/images/icon16.png");
 }
 
-toolbar[iconsize="large"] #tb-ambassador-open {
+#tb-ambassador-open {
   list-style-image: url("chrome://ambassador/skin/images/icon24.png");
 }
