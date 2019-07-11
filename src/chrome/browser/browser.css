@@ -111,7 +111,6 @@
   font-weight: bold;
   padding: 0 1.5em .05em;
   margin: 1px 1px 2px;
-  box-shadow: inset 0px 0px 0px 1px #ECECEC;
 }
 
 #appmenu-button > .button-box .button-text {
@@ -2827,6 +2826,10 @@ toolbar[brighttext] #addonbar-closebutton {
 
     #appmenu-button {
       margin-bottom: -1px; /* compensate white outer border */
+    }
+    
+    #main-window[sizemode="maximized"] #appmenu-button {
+      margin-top: -1px;
     }
     
   }
