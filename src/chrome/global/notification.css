@@ -26,7 +26,7 @@ notification[type="info"] {
 
 notification[type="critical"] {
   color: #fff;
-  background-image: #7F0000;
+  background-color: #7F0000;
 }
 
 /* Override incorrect styling of notification bars with 'outset' class */
