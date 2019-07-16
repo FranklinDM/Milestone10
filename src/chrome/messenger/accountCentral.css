@@ -44,7 +44,7 @@ spacer.big {
 .acctCentralRowTitleBox {
   background-color: ButtonFace;
   margin: 15px 6px 0px;
-  color: -moz-DialogText;
+  color: #000;
   padding-top: 2px;
   padding-bottom: 0;
   padding-inline-start: 8px;

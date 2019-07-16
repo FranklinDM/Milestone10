@@ -21,7 +21,7 @@ notification > hbox {
 }
 
 #noAccountScreen {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
   overflow: auto;
 }
 #noAccountBox {

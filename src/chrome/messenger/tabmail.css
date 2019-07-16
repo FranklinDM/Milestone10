@@ -79,7 +79,7 @@ tabpanels {
 }
 
 .tabmail-tab:focus > .tab-stack > .tab-content > .tab-text {
-  border: 1px dotted -moz-DialogText;
+  border: 1px dotted #000;
 }
 
 /* Tab DnD indicator */

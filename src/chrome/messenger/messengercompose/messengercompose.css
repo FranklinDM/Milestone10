@@ -24,9 +24,9 @@
 /* ::::: special toolbar colors ::::: */
 
 #MsgHeadersToolbar {
-  color: -moz-DialogText;
+  color: #000;
   text-shadow: none;
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 #attachmentbucket-sizer {
@@ -74,11 +74,10 @@
 }
 
 #compose-toolbar-sizer {
-  border-top-width: 1px;
   border-left: none;
   border-right: none;
-  -moz-border-top-colors: ThreeDHighlight;
-  background-color: ThreeDFace;
+  border-top: none;
+  background-color: #CCCCDD;
 }
 
 #msgSubject {
@@ -173,15 +172,6 @@
 }
 
 /* ::::: format toolbar ::::: */
-
-#FormatToolbox {
-  border-top-width: 0;
-  background-color: -moz-Dialog;
-}
-
-#FormatToolbar {
-  border-top: 1px solid ThreeDHighlight !important;
-}
 
 toolbarbutton.formatting-button {
   list-style-image: url("chrome://messenger/skin/messengercompose/format-buttons.png");
@@ -615,9 +605,9 @@ toolbarbutton.formatting-button {
 
 #sidebar-box sidebarheader {
   -moz-appearance: none;
-  color: -moz-DialogText;
+  color: #000;
   text-shadow: none;
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 .ab-closebutton {
@@ -1078,7 +1068,7 @@ treechildren::-moz-tree-image(subscribed-news) {
 }
 
 #sidebar {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 #sidebar-splitter {

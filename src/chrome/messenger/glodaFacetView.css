@@ -5,7 +5,7 @@
 @import url("chrome://messenger/content/glodaFacetView.css");
 
 .facets-sidebar {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
   border-right: 1px solid ThreeDShadow;
 }
 

@@ -5,7 +5,7 @@
 @import url("chrome://messenger/skin/sharedPlatform.css");
 
 #tabs-toolbar {
-  --tabHeight: 23px;
+  --tabHeight: 26px;
   --tabSidePadding: 3px;
 }
 
@@ -14,38 +14,22 @@
 .tabmail-tab {
   -moz-appearance: none;
   -moz-box-align: stretch;
+  background-color: #CCCCDD;
   margin: 0 0 2px 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.10);
-  border-top:    2px solid;
-  border-right:  2px solid;
-  border-left:   2px solid;
-  border-bottom: 0px solid;
-  -moz-border-top-colors:   transparent rgba(0, 0, 0, 0.2);
-  -moz-border-right-colors: transparent ThreeDDarkShadow;
-  -moz-border-left-colors:  transparent rgba(0, 0, 0, 0.2);
-}
-
-/* Unselected tab with hover */
-.tabmail-tab:hover:not([selected="true"]) {
-  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid;
+  border-bottom-style: none;
+  border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;
 }
 
 /* Selected tab */
 .tabmail-tab[selected=true] {
-  -moz-border-top-colors:   ThreeDHighlight  ThreeDLightShadow;
-  -moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  -moz-border-left-colors:  ThreeDHighlight  ThreeDLightShadow;
-  background-color: -moz-Dialog;
-}
-
-.tabmail-tab[type="preferencesTab"] {
-  list-style-image: url("chrome://mozapps/skin/extensions/utilities.svg#utilities");
+  background-color: #DDDDFF;
 }
 
 .tab-content {
-  padding-inline-end: var(--tabSidePadding);
   padding-inline-start: var(--tabSidePadding);
+  padding-inline-end: var(--tabSidePadding);
 }
 
 .tab-throbber,

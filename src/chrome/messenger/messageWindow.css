@@ -14,7 +14,7 @@
 
 #messagepanebox {
   text-shadow: none;
-  background-color: -moz-dialog;
+  background-color: #CCCCDD;
 }
 
 #mail-toolbox:-moz-lwtheme {

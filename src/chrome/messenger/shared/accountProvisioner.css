@@ -10,7 +10,7 @@
 
 body {
   font-family: sans-serif;
-  background-color: -moz-dialog;
+  background-color: #CCCCDD;
 }
 
 input[type="submit"]::-moz-focus-inner,

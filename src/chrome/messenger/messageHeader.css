@@ -10,9 +10,9 @@
 
 /* ::::: for the entire area ::::: */
 .main-header-area {
-  color: WindowText;
-  background-color: ButtonFace;
-  border-bottom: 1px solid ThreeDDarkShadow;
+  color: #000;
+  background-color: #CCCCDD;
+  border-bottom: 1px solid #9999CC;
   padding: 0.4ex;
 }
 
@@ -42,9 +42,9 @@
 
 #attachmentList {
   -moz-appearance: none;
-  border-top: 1px solid ThreeDDarkShadow;
-  background-color: -moz-Field;
-  color: -moz-FieldText;
+  border-top: 1px solid #9999CC;
+  background-color: #fff;
+  color: #000;
 }
 
 #attachmentToggle {
@@ -71,8 +71,8 @@
 #attachmentName:hover,
 #attachmentName[selected="true"] {
   cursor: pointer;
-  color: HighlightText;
-  background-color: Highlight;
+  color: #fff;
+  background-color: #666699;
 }
 
 #attachmentSize {
@@ -92,12 +92,12 @@
 }
 
 #attachment-splitter[collapsed="true"] + #attachmentView {
-  border-top: 1px solid ThreeDShadow;
+  border-top: 1px solid #9999CC;
 }
 
 #attachmentBar {
-  color: -moz-dialogtext;
-  background-color: -moz-Dialog;
+  color: #000;
+  background-color: #CCCCDD;
 }
 
 .findbar-container {

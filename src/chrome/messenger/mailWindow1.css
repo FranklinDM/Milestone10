@@ -43,7 +43,7 @@ toolbar:only-of-type {
 }
 
 #messengerBox {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 /* ::::: thread decoration ::::: */
@@ -54,7 +54,7 @@ treechildren::-moz-tree-row(dummy)  {
 }
 
 treechildren::-moz-tree-row(dummy, selected) {
-  background-color: -moz-Dialog;
+  background-color: #CCCCDD;
 }
 
 treechildren::-moz-tree-row(dummy, selected, focus)  {

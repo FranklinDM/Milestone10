@@ -55,7 +55,7 @@ radio[pane=paneAdvanced] {
 /* override the color style for tag items when they 
    have selection */
 #tagList listitem[selected="true"] {
-  color: -moz-DialogText !important;
+  color: #000 !important;
 }
 
 #tagList:focus > listitem[selected="true"] {

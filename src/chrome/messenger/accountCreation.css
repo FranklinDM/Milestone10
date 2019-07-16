@@ -35,14 +35,14 @@ menulist[disabled="true"] {
   -moz-appearance: none;
   border: none;
   background-color: #fff;
-  color: -moz-DialogText;
+  color: #000;
 }
 
 menulist[disabled="true"] > .menulist-editable-box,
 menulist[disabled="true"] > .menulist-editable-box > .menulist-editable-input,
 menulist[disabled="true"] > .menulist-dropmarker {
   -moz-appearance: none;
-  color: -moz-DialogText;
+  color: #000;
 }
 
 #outgoing_protocol {
@@ -80,7 +80,7 @@ window {
 
 .mastervbox {
   padding: 14px;
-  background: -moz-dialog;
+  background: #CCCCDD;
 }
 
 #warningbox {
@@ -198,8 +198,8 @@ input[disabled="true"],
 menulist[disabled="true"] {
   -moz-appearance: none;
   border: 0;
-  background-color: -moz-dialog;
-  color: -moz-DialogText;
+  background-color: #CCCCDD;
+  color: #000;
 }
 
 textbox.padded html|*.textbox-input::-moz-placeholder {
