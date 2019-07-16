@@ -83,7 +83,6 @@ window {
     border-left: 1px solid ButtonShadow;
     padding: 0 5px;
     background: Button;
-    color: ButtonText;
     font: message-box;
     text-shadow: none;
     text-align: center;
@@ -116,25 +115,25 @@ window {
     background-color: red;
 }
 
-.view-button:hover,
 .view-button[state="current"] {
     margin: 0 0 0 1px;
     border-left: none;
-    border-radius: 0 0 6px 6px;
     padding: 5px;
-    background: Window;
-    color: WindowText;
+    background-color: #DDDDFF;
 }
 
-.view-button[state="current"] + .view-button,
-.view-button:hover + .view-button:not([state="current"]) {
+.view-button[state="current"] + .view-button {
     border-left-color: transparent;
 }
 
 .view-button[state="current"] {
     position: relative; /* So it visually appears above the tabs either side. */
-    border: 2px solid ButtonShadow;
-    border-top: none;
+    border: 2px solid;
+    -moz-border-top-colors: #ECECEC transparent;
+    -moz-border-right-colors: #6A6A6A transparent;
+    -moz-border-bottom-colors: #6A6A6A transparent;
+    -moz-border-left-colors: #ECECEC transparent;
+    border-top-style: none;
     padding: 5px 3px 3px 3px;
 }
 
