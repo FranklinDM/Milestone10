@@ -187,12 +187,6 @@ toolbarbutton.formatting-button {
 #AbsoluteFontSizeButton[disabled="true"] {
   -moz-image-region: rect(16px 320px 32px 304px) !important;
 }
-#AbsoluteFontSizeButton:not([disabled="true"]):not([open]):hover {
-  -moz-image-region: rect(32px 320px 48px 304px);
-}
-#AbsoluteFontSizeButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 320px 64px 304px);
-}
 
 #DecreaseFontSizeButton {
   -moz-image-region: rect(0px 16px 16px 0px);
@@ -200,13 +194,6 @@ toolbarbutton.formatting-button {
 #DecreaseFontSizeButton[disabled="true"] {
   -moz-image-region: rect(16px 16px 32px 0px) !important;
 }
-#DecreaseFontSizeButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 16px 48px 0px);
-}
-#DecreaseFontSizeButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 16px 64px 0px);
-}
-
 
 #IncreaseFontSizeButton {
   -moz-image-region: rect(0px 32px 16px 16px);
@@ -214,25 +201,12 @@ toolbarbutton.formatting-button {
 #IncreaseFontSizeButton[disabled="true"] {
   -moz-image-region: rect(16px 32px 32px 16px) !important;
 }
-#IncreaseFontSizeButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 32px 48px 16px);
-}
-#IncreaseFontSizeButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 32px 64px 16px);
-}
-
 
 #boldButton {
   -moz-image-region: rect(0px 48px 16px 32px);
 }
 #boldButton[disabled="true"] {
   -moz-image-region: rect(16px 48px 32px 32px) !important;
-}
-#boldButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 48px 48px 32px);
-}
-#boldButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 48px 64px 32px);
 }
 
 #italicButton {
@@ -241,12 +215,6 @@ toolbarbutton.formatting-button {
 #italicButton[disabled="true"] {
   -moz-image-region: rect(16px 64px 32px 48px) !important;
 }
-#italicButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 64px 48px 48px);
-}
-#italicButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 64px 64px 48px);
-}
 
 #underlineButton {
   -moz-image-region: rect(0px 80px 16px 64px);
@@ -254,13 +222,6 @@ toolbarbutton.formatting-button {
 #underlineButton[disabled="true"] {
   -moz-image-region: rect(16px 80px 32px 64px) !important;
 }
-#underlineButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 80px 48px 64px);
-}
-#underlineButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 80px 64px 64px);
-}
-
 
 #ulButton {
   -moz-image-region: rect(0px 96px 16px 80px);
@@ -268,24 +229,11 @@ toolbarbutton.formatting-button {
 #ulButton[disabled="true"] {
   -moz-image-region: rect(16px 96px 32px 80px) !important;
 }
-#ulButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 96px 48px 80px);
-}
-#ulButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 96px 64px 80px);
-}
-
 #olButton {
   -moz-image-region: rect(0px 112px 16px 96px);
 }
 #olButton[disabled="true"] {
   -moz-image-region: rect(16px 112px 32px 96px) !important;
-}
-#olButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 112px 48px 96px);
-}
-#olButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 112px 64px 96px);
 }
 
 #outdentButton {
@@ -294,24 +242,12 @@ toolbarbutton.formatting-button {
 #outdentButton[disabled="true"] {
   -moz-image-region: rect(16px 128px 32px 112px) !important;
 }
-#outdentButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 128px 48px 112px);
-}
-#outdentButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 128px 64px 112px);
-}
 
 #indentButton {
   -moz-image-region: rect(0px 144px 16px 128px);
 }
 #indentButton[disabled="true"] {
   -moz-image-region: rect(16px 144px 32px 128px) !important;
-}
-#indentButton:not([disabled="true"]):hover {
-  -moz-image-region: rect(32px 144px 48px 128px);
-}
-#indentButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 144px 64px 128px);
 }
 
 #AlignPopupButton {
@@ -320,12 +256,6 @@ toolbarbutton.formatting-button {
 #AlignPopupButton[disabled="true"] {
   -moz-image-region: rect(16px 160px 32px 144px) !important;
 }
-#AlignPopupButton:not([disabled="true"]):not([open]):hover {
-  -moz-image-region: rect(32px 160px 48px 144px);
-}
-#AlignPopupButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 160px 64px 144px);
-}
 
 #InsertPopupButton {
   -moz-image-region: rect(0px 256px 16px 240px);
@@ -333,24 +263,12 @@ toolbarbutton.formatting-button {
 #InsertPopupButton[disabled="true"] {
   -moz-image-region: rect(16px 256px 32px 240px) !important;
 }
-#InsertPopupButton:not([disabled="true"]):not([open]):hover {
-  -moz-image-region: rect(32px 256px 48px 240px);
-}
-#InsertPopupButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 256px 64px 240px);
-}
 
 #smileButtonMenu {
   -moz-image-region: rect(0px 304px 16px 288px);
 }
 #smileButtonMenu[disabled="true"] {
   -moz-image-region: rect(16px 304px 32px 288px) !important;
-}
-#smileButtonMenu:not([disabled="true"]):not([open]):hover {
-  -moz-image-region: rect(32px 304px 48px 288px);
-}
-#smileButtonMenu:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 304px 64px 288px);
 }
 
 /* ..... align menu ..... */
@@ -362,41 +280,29 @@ toolbarbutton.formatting-button {
 #AlignLeftItem {
   -moz-image-region: rect(0px 160px 16px 144px);
 }
-#AlignLeftItem:hover {
+#AlignLeftItem[_moz-menuactive="true"] {
   -moz-image-region: rect(32px 160px 48px 144px);
-}
-#AlignLeftItem:hover:active {
-  -moz-image-region: rect(48px 160px 64px 144px);
 }
 
 #AlignCenterItem {
   -moz-image-region: rect(0px 176px 16px 160px);
 }
-#AlignCenterItem:hover {
+#AlignCenterItem[_moz-menuactive="true"] {
   -moz-image-region: rect(32px 176px 48px 160px);
-}
-#AlignCenterItem:hover:active {
-  -moz-image-region: rect(48px 176px 64px 160px);
 }
 
 #AlignRightItem {
   -moz-image-region: rect(0px 192px 16px 176px);
 }
-#AlignRightItem:hover {
+#AlignRightItem[_moz-menuactive="true"] {
   -moz-image-region: rect(32px 192px 48px 176px);
-}
-#AlignRightItem:hover:active {
-  -moz-image-region: rect(48px 192px 64px 176px);
 }
 
 #AlignJustifyItem {
   -moz-image-region: rect(0px 208px 16px 192px);
 }
-#AlignJustifyItem:hover {
+#AlignJustifyItem[_moz-menuactive="true"] {
   -moz-image-region: rect(32px 208px 48px 192px);
-}
-#AlignJustifyItem:hover:active {
-  -moz-image-region: rect(48px 208px 64px 192px);
 }
 
 /* ..... insert menu ..... */
@@ -408,51 +314,21 @@ toolbarbutton.formatting-button {
 #InsertLinkItem {
   -moz-image-region: rect(0px 224px 16px 208px);
 }
-#InsertLinkItem:hover {
-  -moz-image-region: rect(32px 224px 48px 208px);
-}
-#InsertLinkItem:hover:active {
-  -moz-image-region: rect(48px 224px 64px 208px);
-}
 
 #InsertAnchorItem {
   -moz-image-region: rect(0px 240px 16px 224px);
-}
-#InsertAnchorItem:hover {
-  -moz-image-region: rect(32px 240px 48px 224px);
-}
-#InsertAnchorItem:hover:active {
-  -moz-image-region: rect(48px 240px 64px 224px);
 }
 
 #InsertImageItem {
   -moz-image-region: rect(0px 256px 16px 240px);
 }
-#InsertImageItem:hover {
-  -moz-image-region: rect(32px 256px 48px 240px);
-}
-#InsertImageItem:hover:active {
-  -moz-image-region: rect(48px 256px 64px 240px);
-}
 
 #InsertHRuleItem {
   -moz-image-region: rect(0px 272px 16px 256px);
 }
-#InsertHRuleItem:hover {
-  -moz-image-region: rect(32px 272px 48px 256px);
-}
-#InsertHRuleItem:hover:active {
-  -moz-image-region: rect(48px 272px 64px 256px);
-}
 
 #InsertTableItem {
   -moz-image-region: rect(0px 288px 16px 272px);
-}
-#InsertTableItem:hover {
-  -moz-image-region: rect(32px 288px 48px 272px);
-}
-#InsertTableItem:hover:active {
-  -moz-image-region: rect(48px 288px 64px 272px);
 }
 
 /* ..... smiley menu ..... */
@@ -587,17 +463,7 @@ toolbarbutton.formatting-button {
   background-color: transparent;
 }
 
-#HighlightColorButton:hover {
-  -moz-image-region: rect(260px 32px 272px 16px);
-}
-
-#HighlightColorButton:hover:active {
-  -moz-image-region: rect(260px 48px 272px 32px);
-}
-
-#HighlightColorButton[disabled="true"],
-#HighlightColorButton[disabled="true"]:hover,
-#HighlightColorButton[disabled="true"]:hover:active {
+#HighlightColorButton[disabled="true"] {
   -moz-image-region: rect(260px 64px 272px 48px);
 }
 
@@ -669,16 +535,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 24px 24px 0px);
 }
 
-#button-send:hover {
-  -moz-image-region: rect(24px 24px 48px 0px);
-} 
-
 #button-send[disabled="true"] {
   -moz-image-region: rect(48px 24px 72px 0px) !important;
-}
-
-#button-send:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 24px 96px 0px);
 }
 
 #button-contacts {
@@ -686,16 +544,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 48px 24px 24px) !important;
 }
 
-#button-contacts:hover {
-  -moz-image-region: rect(24px 48px 48px 24px) !important;
-} 
-
 #button-contacts[disabled="true"] {
   -moz-image-region: rect(48px 48px 72px 24px) !important;
-}
-
-#button-contacts:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 48px 96px 24px) !important;
 }
 
 #spellingButton {
@@ -703,16 +553,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 72px 24px 48px);
 }
 
-#spellingButton:hover {
-  -moz-image-region: rect(24px 72px 48px 48px);
-}
-
 #spellingButton[disabled="true"] {
   -moz-image-region: rect(48px 72px 72px 48px) !important;
-}
-
-#spellingButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 72px 96px 48px);
 }
 
 #button-attach {
@@ -720,16 +562,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 96px 24px 72px);
 }
 
-#button-attach:hover {
-  -moz-image-region: rect(24px 96px 48px 72px);
-}
-
 #button-attach[disabled="true"] {
   -moz-image-region: rect(48px 96px 72px 72px) !important;
-}
-
-#button-attach:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 96px 96px 72px);
 }
 
 #button-security {
@@ -737,16 +571,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 120px 24px 96px);
 }
 
-#button-security:hover {
-  -moz-image-region: rect(24px 120px 48px 96px);
-}
-
 #button-security[disabled] {
   -moz-image-region: rect(48px 120px 72px 96px) !important;
-}
-
-#button-security:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 120px 96px 96px);
 }
 
 #button-save {
@@ -754,16 +580,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 144px 24px 120px);
 }
 
-#button-save:hover {
-  -moz-image-region: rect(24px 144px 48px 120px);
-} 
-
 #button-save[disabled="true"] {
   -moz-image-region: rect(48px 144px 72px 120px) !important;
-}
-
-#button-save:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 144px 96px 120px);
 }
 
 #quoteButton {
@@ -771,16 +589,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 168px 24px 144px);
 }
 
-#quoteButton:hover {
-  -moz-image-region: rect(24px 168px 48px 144px);
-}
-
 #quoteButton[disabled="true"] {
   -moz-image-region: rect(48px 168px 72px 144px) !important;
-}
-
-#quoteButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 168px 96px 144px);
 }
 
 #cut-button {
@@ -788,16 +598,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 192px 24px 168px);
 }
 
-#cut-button:hover {
-  -moz-image-region: rect(24px 192px 48px 168px);
-}
-
 #cut-button[disabled="true"] {
   -moz-image-region: rect(48px 192px 72px 168px) !important;
-}
-
-#cut-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 192px 96px 168px);
 }
 
 #copy-button {
@@ -805,16 +607,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 216px 24px 192px);
 }
 
-#copy-button:hover {
-  -moz-image-region: rect(24px 216px 48px 192px);
-}
-
 #copy-button[disabled="true"] {
   -moz-image-region: rect(48px 216px 72px 192px) !important;
-}
-
-#copy-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 216px 96px 192px);
 }
 
 #paste-button {
@@ -822,16 +616,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 240px 24px 216px);
 }
 
-#paste-button:hover {
-  -moz-image-region: rect(24px 240px 48px 216px);
-}
-
 #paste-button[disabled="true"] {
   -moz-image-region: rect(48px 240px 72px 216px) !important;
-}
-
-#paste-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 240px 96px 216px);
 }
 
 #button-print {
@@ -839,16 +625,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 264px 24px 240px);
 }
 
-#button-print:hover {
-  -moz-image-region: rect(24px 264px 48px 240px);
-}
-
 #button-print[disabled="true"] {
   -moz-image-region: rect(48px 264px 72px 240px);
-}
-
-#button-print:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 264px 96px 240px);
 }
 
 /* ::::: small primary toolbar buttons ::::: */
@@ -858,33 +636,17 @@ toolbar[iconsize="small"] #button-send {
   -moz-image-region: rect(0px 16px 16px 0px);
 }
 
-toolbar[iconsize="small"] #button-send:hover {
-  -moz-image-region: rect(16px 16px 32px 0px);
-} 
-
 toolbar[iconsize="small"] #button-send[disabled="true"] {
   -moz-image-region: rect(32px 16px 48px 0px) !important;
 } 
-
-toolbar[iconsize="small"] #button-send:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 16px 64px 0px);
-}
 
 toolbar[iconsize="small"] #button-contacts {
   list-style-image: url("chrome://messenger/skin/messengercompose/compose-toolbar-small.png");
   -moz-image-region: rect(0px 32px 16px 16px) !important;
 }
 
-toolbar[iconsize="small"] #button-contacts:hover {
-  -moz-image-region: rect(16px 32px 32px 16px) !important;
-}
-
 toolbar[iconsize="small"] #button-contacts[disabled="true"] {
    -moz-image-region: rect(32px 32px 48px 16px) !important;
-}
-
-toolbar[iconsize="small"] #button-contacts:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 32px 64px 16px) !important;
 }
 
 toolbar[iconsize="small"] #spellingButton {
@@ -892,16 +654,8 @@ toolbar[iconsize="small"] #spellingButton {
   -moz-image-region: rect(0px 48px 16px 32px);
 }
 
-toolbar[iconsize="small"] #spellingButton:hover {
-  -moz-image-region: rect(16px 48px 32px 32px);
-}
-
 toolbar[iconsize="small"] #spellingButton[disabled="true"] {
   -moz-image-region: rect(32px 48px 48px 32px) !important;
-}
-
-toolbar[iconsize="small"] #spellingButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 48px 64px 32px);
 }
 
 toolbar[iconsize="small"] #button-attach {
@@ -909,16 +663,8 @@ toolbar[iconsize="small"] #button-attach {
   -moz-image-region: rect(0px 64px 16px 48px);
 }
 
-toolbar[iconsize="small"] #button-attach:hover {
-  -moz-image-region: rect(16px 64px 32px 48px);
-}
-
 toolbar[iconsize="small"] #button-attach[disabled="true"] {
   -moz-image-region: rect(32px 64px 48px 48px) !important;
-}
-
-toolbar[iconsize="small"] #button-attach:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 64px 64px 48px);
 }
 
 toolbar[iconsize="small"] #button-security {
@@ -926,16 +672,8 @@ toolbar[iconsize="small"] #button-security {
   -moz-image-region: rect(0px 80px 16px 64px);
 }
 
-toolbar[iconsize="small"] #button-security:hover {
-  -moz-image-region: rect(16px 80px 32px 64px);
-}
-
 toolbar[iconsize="small"] #button-security[disabled] {
   -moz-image-region: rect(32px 80px 48px 64px) !important;
-}
-
-toolbar[iconsize="small"] #button-security:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 80px 64px 64px);
 }
 
 toolbar[iconsize="small"] #button-save {
@@ -943,16 +681,8 @@ toolbar[iconsize="small"] #button-save {
   -moz-image-region: rect(0px 96px 16px 80px);
 }
 
-toolbar[iconsize="small"] #button-save:hover {
-  -moz-image-region: rect(16px 96px 32px 80px);
-}
-
 toolbar[iconsize="small"] #button-save[disabled="true"] {
   -moz-image-region: rect(32px 96px 48px 80px) !important;
-}
-
-toolbar[iconsize="small"] #button-save:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 96px 64px 80px);
 }
 
 toolbar[iconsize="small"] #quoteButton {
@@ -960,16 +690,8 @@ toolbar[iconsize="small"] #quoteButton {
   -moz-image-region: rect(0px 112px 16px 96px);
 }
 
-toolbar[iconsize="small"] #quoteButton:hover {
-  -moz-image-region: rect(16px 112px 32px 96px);
-}
-
 toolbar[iconsize="small"] #quoteButton[disabled="true"] {
   -moz-image-region: rect(32px 112px 48px 96px) !important;
-}
-
-toolbar[iconsize="small"] #quoteButton:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 112px 64px 96px);
 }
 
 toolbar[iconsize="small"] #cut-button {
@@ -977,16 +699,8 @@ toolbar[iconsize="small"] #cut-button {
   -moz-image-region: rect(0px 128px 16px 112px);
 }
 
-toolbar[iconsize="small"] #cut-button:hover {
-  -moz-image-region: rect(16px 128px 32px 112px);
-}
-
 toolbar[iconsize="small"] #cut-button[disabled="true"] {
   -moz-image-region: rect(32px 128px 48px 112px) !important;
-}
-
-toolbar[iconsize="small"] #cut-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 128px 64px 112px);
 }
 
 toolbar[iconsize="small"] #copy-button {
@@ -994,16 +708,8 @@ toolbar[iconsize="small"] #copy-button {
   -moz-image-region: rect(0px 144px 16px 128px);
 }
 
-toolbar[iconsize="small"] #copy-button:hover {
-  -moz-image-region: rect(16px 144px 32px 128px);
-}
-
 toolbar[iconsize="small"] #copy-button[disabled="true"] {
   -moz-image-region: rect(32px 144px 48px 128px) !important;
-}
-
-toolbar[iconsize="small"] #copy-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 144px 64px 128px);
 }
 
 toolbar[iconsize="small"] #paste-button {
@@ -1011,16 +717,8 @@ toolbar[iconsize="small"] #paste-button {
   -moz-image-region: rect(0px 160px 16px 144px);
 }
 
-toolbar[iconsize="small"] #paste-button:hover {
-  -moz-image-region: rect(16px 160px 32px 144px);
-}
-
 toolbar[iconsize="small"] #paste-button[disabled="true"] {
   -moz-image-region: rect(32px 160px 48px 144px) !important;
-}
-
-toolbar[iconsize="small"] #paste-button:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 160px 64px 144px);
 }
 
 toolbar[iconsize="small"] #button-print {
@@ -1028,22 +726,14 @@ toolbar[iconsize="small"] #button-print {
   -moz-image-region: rect(0px 176px 16px 160px);
 }
 
-toolbar[iconsize="small"] #button-print:hover {
-  -moz-image-region: rect(16px 176px 32px 160px);
-}
-
 toolbar[iconsize="small"] #button-print[disabled="true"] {
   -moz-image-region: rect(32px 176px 48px 160px);
-}
-
-toolbar[iconsize="small"] #button-print:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 176px 64px 160px);
 }
 
 /* ::::: autocomplete icons ::::: */
 
 treechildren::-moz-tree-image(local-abook) {
-   moz-margin-start: 2px;
+  margin-inline-start: 2px;
   margin-inline-end: 5px;
   list-style-image: url("chrome://messenger/skin/addressbook/icons/addrbook.png");
 }
@@ -1069,8 +759,4 @@ treechildren::-moz-tree-image(subscribed-news) {
 
 #sidebar {
   background-color: #CCCCDD;
-}
-
-#sidebar-splitter {
-  background-color: ThreeDFace;
 }

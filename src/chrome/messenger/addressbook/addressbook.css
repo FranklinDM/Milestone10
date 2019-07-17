@@ -41,16 +41,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 24px 24px 0px);
 }
 
-#button-newcard:hover {
-  -moz-image-region: rect(24px 24px 48px 0px);
-}
-
 #button-newcard[disabled="true"] {
   -moz-image-region: rect(48px 24px 72px 0px) !important;
-}
-
-#button-newcard:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 24px 96px 0px);
 }
 
 #button-newlist {
@@ -58,16 +50,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 48px 24px 24px);
 }
 
-#button-newlist:hover {
-  -moz-image-region: rect(24px 48px 48px 24px);
-}
-
 #button-newlist[disabled="true"] {
   -moz-image-region: rect(48px 48px 72px 24px) !important;
-}
-
-#button-newlist:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 48px 96px 24px);
 }
 
 #button-editcard {
@@ -75,16 +59,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 72px 24px 48px);
 }
 
-#button-editcard:hover {
-  -moz-image-region: rect(24px 72px 48px 48px);
-}
-
 #button-editcard[disabled="true"] {
   -moz-image-region: rect(48px 72px 72px 48px) !important;
-}
-
-#button-editcard:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 72px 96px 48px);
 }
 
 #button-newmessage {
@@ -92,16 +68,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 96px 24px 72px);
 }
 
-#button-newmessage:hover {
-  -moz-image-region: rect(24px 96px 48px 72px);
-}
-
 #button-newmessage[disabled] {
   -moz-image-region: rect(48px 96px 72px 72px) !important;
-}
-
-#button-newmessage:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 96px 96px 72px);
 }
 
 #button-newim {
@@ -109,16 +77,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
  -moz-image-region: rect(0px 120px 24px 96px);
 }
 
-#button-newim:hover {
-  -moz-image-region: rect(24px 120px 48px 96px);
-}
-
 #button-newim[disabled] {
   -moz-image-region: rect(48px 120px 72px 96px) !important;
-}
-
-#button-newim:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 120px 96px 96px);
 }
 
 #button-abdelete {
@@ -126,16 +86,8 @@ toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
   -moz-image-region: rect(0px 144px 24px 120px);
 }
 
-#button-abdelete:hover {
-  -moz-image-region: rect(24px 144px 48px 120px);
-}
-
 #button-abdelete[disabled] {
   -moz-image-region: rect(48px 144px 72px 120px) !important;
-}
-
-#button-abdelete:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(72px 144px 96px 120px);
 }
 
 /* ::::: small primary toolbar buttons ::::: */
@@ -145,16 +97,8 @@ toolbar[iconsize="small"] #button-newcard {
   -moz-image-region: rect(0px 16px 16px 0px);
 }
 
-toolbar[iconsize="small"] #button-newcard:hover {
-  -moz-image-region: rect(16px 16px 32px 0px);
-}
-
 toolbar[iconsize="small"] #button-newcard[disabled] {
   -moz-image-region: rect(32px 16px 48px 0px) !important;
-}
-
-toolbar[iconsize="small"] #button-newcard:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 16px 64px 0px);
 }
 
 toolbar[iconsize="small"] #button-newlist {
@@ -162,16 +106,8 @@ toolbar[iconsize="small"] #button-newlist {
   -moz-image-region: rect(0px 32px 16px 16px);
 }
 
-toolbar[iconsize="small"] #button-newlist:hover {
-  -moz-image-region: rect(16px 32px 32px 16px);
-}
-
 toolbar[iconsize="small"] #button-newlist[disabled] {
    -moz-image-region: rect(32px 32px 48px 16px) !important;
-}
-
-toolbar[iconsize="small"] #button-newlist:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 32px 64px 16px);
 }
 
 toolbar[iconsize="small"] #button-editcard {
@@ -179,16 +115,8 @@ toolbar[iconsize="small"] #button-editcard {
   -moz-image-region: rect(0px 48px 16px 32px);
 }
 
-toolbar[iconsize="small"] #button-editcard:hover {
-  -moz-image-region: rect(16px 48px 32px 32px);
-}
-
 toolbar[iconsize="small"] #button-editcard[disabled="true"] {
   -moz-image-region: rect(32px 48px 48px 32px) !important;
-}
-
-toolbar[iconsize="small"] #button-editcard:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 48px 64px 32px);
 }
 
 toolbar[iconsize="small"] #button-newmessage {
@@ -196,16 +124,8 @@ toolbar[iconsize="small"] #button-newmessage {
   -moz-image-region: rect(0px 64px 16px 48px);
 }
 
-toolbar[iconsize="small"] #button-newmessage:hover {
-  -moz-image-region: rect(16px 64px 32px 48px);
-}
-
 toolbar[iconsize="small"] #button-newmessage[disabled] {
   -moz-image-region: rect(32px 64px 48px 48px) !important;
-}
-
-toolbar[iconsize="small"] #button-newmessage:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 64px 64px 48px);
 }
 
 toolbar[iconsize="small"] #button-newim {
@@ -213,16 +133,8 @@ toolbar[iconsize="small"] #button-newim {
   -moz-image-region: rect(0px 80px 16px 64px);
 }
 
-toolbar[iconsize="small"] #button-newim:hover {
-  -moz-image-region: rect(16px 80px 32px 64px);
-}
-
 toolbar[iconsize="small"] #button-newim[disabled] {
   -moz-image-region: rect(32px 80px 48px 64px) !important;
-}
-
-toolbar[iconsize="small"] #button-newim:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 80px 64px 64px);
 }
 
 toolbar[iconsize="small"] #button-abdelete {
@@ -230,16 +142,8 @@ toolbar[iconsize="small"] #button-abdelete {
   -moz-image-region: rect(0px 96px 16px 80px);
 }
 
-toolbar[iconsize="small"] #button-abdelete:hover {
-  -moz-image-region: rect(16px 96px 32px 80px);
-}
-
 toolbar[iconsize="small"] #button-abdelete[disabled] {
   -moz-image-region: rect(32px 96px 48px 80px) !important;
-}
-
-toolbar[iconsize="small"] #button-abdelete:not([disabled="true"]):hover:active {
-  -moz-image-region: rect(48px 96px 64px 80px);
 }
 
 #abContent {
