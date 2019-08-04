@@ -83,11 +83,8 @@ iframe {
 
 statusbar {
   -moz-appearance: none;
-  border-top: 1px solid ThreeDLightShadow;
-  border-left: 1px solid #6A6A6A;
-  border-right: 1px solid #ECECEC;
-  border-bottom: 1px solid #ECECEC;
-  background-color: #CCCCDD;
+  border-top: 1px solid #9999AA;
+  background-color: #666699;
   min-height: 22px;
 }
 
@@ -95,10 +92,7 @@ statusbarpanel {
   -moz-appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
-  border-left: 1px solid #ECECEC;
-  border-top: 1px solid #ECECEC;
-  border-right: 1px solid #6A6A6A;
-  border-bottom: 1px solid #6A6A6A;
+  color: #CCCCFF;
   padding: 0 4px;
 }
 
