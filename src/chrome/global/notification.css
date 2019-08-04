@@ -9,6 +9,7 @@ notification {
   background-color: InfoBackground;
   text-shadow: none;
   border-top: 1px solid #9999CC;
+  border-bottom: 1px solid #9999CC;
 }
 
 notificationbox[notificationside="top"] > notification {
