@@ -2236,11 +2236,6 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   color: #CCCCFF;
 }
 
-#addon-bar #status4evar-progress-bar {
-  border: 1px solid;
-  border-color: #A4A4A4;
-}
-
 #status-bar {
   -moz-appearance: none;
   background-color: transparent;

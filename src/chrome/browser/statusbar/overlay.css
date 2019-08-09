@@ -123,6 +123,11 @@ splitter.status4evar-status-splitter:not(:hover) {
   border: none;
 }
 
+#status4evar-progress-bar {
+  border: 1px solid;
+  border-color: #A4A4A4;
+}
+
 #status4evar-progress-bar > .progress-remainder {
   background-image: none;
   background-color: transparent;

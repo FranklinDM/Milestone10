@@ -39,6 +39,10 @@ toolbar[printpreview="true"] {
   list-style-image: url("chrome://messenger/skin/icons/online.png");
 }
 
+#statusbar-icon {
+  border: 1px solid #A4A4A4;
+}
+
 /* ::::: Notifications ::::: */
 
 notification[value="addon-install-blocked"],
