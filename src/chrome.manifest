@@ -6,3 +6,5 @@ skin	ambassador		milestone10		chrome/ambassador/
 skin    messenger               milestone10        chrome/messenger/
 skin    messenger-newsblog      milestone10        chrome/messenger-newsblog/
 skin    editor                  milestone10        chrome/editor/
+
+override    chrome://global/skin/icons/loading.png    chrome://global/skin/icons/loading_16.png
