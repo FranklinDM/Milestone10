@@ -1,10 +1,14 @@
-skin	global			milestone10		chrome/global/
-skin	browser			milestone10		chrome/browser/
-skin	mozapps			milestone10		chrome/mozapps/
-skin	communicator	milestone10		chrome/communicator/
-skin	ambassador		milestone10		chrome/ambassador/
+# Toolkit
+skin    global                  milestone10        chrome/global/
+skin    mozapps                 milestone10        chrome/mozapps/
+
+# Application
+skin    browser                 milestone10        chrome/browser/
 skin    messenger               milestone10        chrome/messenger/
 skin    messenger-newsblog      milestone10        chrome/messenger-newsblog/
 skin    editor                  milestone10        chrome/editor/
+skin    ambassador              milestone10        chrome/ambassador/
+skin    communicator            milestone10        chrome/communicator/
 
+# Another loading icon (with the same dimensions, seemingly redundant) is referenced by some applications
 override    chrome://global/skin/icons/loading.png    chrome://global/skin/icons/loading_16.png
