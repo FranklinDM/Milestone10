@@ -2231,8 +2231,12 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   background-repeat: no-repeat;
 }
 
-#addon-bar,
-#addon-bar .toolbarbutton-1 {
+#addon-bar:-moz-lwtheme {
+  background-color: transparent;
+}
+
+#addon-bar:not(:-moz-lwtheme),
+#addon-bar:not(:-moz-lwtheme) .toolbarbutton-1 {
   color: #CCCCFF;
 }
 

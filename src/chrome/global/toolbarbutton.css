@@ -75,10 +75,10 @@ toolbarbutton[checked="true"]:not([disabled="true"]) {
   background-color: rgba(255,255,255,0.3);
 }
 
-toolbarbutton:-moz-lwtheme {
-  -moz-appearance: none;
-}
-
+toolbarbutton:-moz-lwtheme:hover:not([disabled="true"]),
+toolbarbutton:-moz-lwtheme:hover:active:not([disabled="true"]),
+toolbarbutton:-moz-lwtheme[open="true"]:hover,
+toolbarbutton:-moz-lwtheme[open="true"],
 toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
   color: inherit;
   text-shadow: inherit;
