@@ -136,12 +136,8 @@ tooltip[titletip="true"] {
 
 menulist > menupopup {
   -moz-appearance: none;
-  border-width: 1px;
-  -moz-border-top-colors: #000;
-  -moz-border-right-colors: #000;
-  -moz-border-bottom-colors: #000;
-  -moz-border-left-colors: #000;
+  border-color: #5B5B5B;
   padding: 0px;
   min-width: 0px;
-  background-color: #fff;
+  background-color: #CCCCCC;
 }
