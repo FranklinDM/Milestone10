@@ -278,8 +278,8 @@ treechildren::-moz-tree-cell-text(GeneratedName) {
 .CardViewHeading {
   padding: 1px;
   padding-inline-start: 5px;
-  background-color: Highlight;
-  color: HighlightText;
+  background-color: #666699;
+  color: #fff;
   font-weight: bold;
   min-width: 30px;
 }
