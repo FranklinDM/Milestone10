@@ -156,7 +156,6 @@
 }
 
 .msgHeaderView-button[type="menu-button"] > .toolbarbutton-menubutton-button {
-  -moz-appearance: button;
   min-width: 1em;
   min-height: 1ex;
   margin: 0px;
@@ -372,14 +371,13 @@ toolbarpaletteitem .msgHeaderView-button {
   padding-inline-start: 2px !important;
   padding-inline-end: 2px !important;
   background-color: transparent;
-  border-radius: 2px;
   border: 1px dotted transparent;
 }
 
 .emailDisplayButton:hover {
   cursor: pointer;
-  color: HighlightText;
-  background-color: Highlight;
+  color: #fff;
+  background-color: #666699;
 }
 
 mail-emailaddress[selected="true"] .emailDisplayButton{
@@ -387,11 +385,8 @@ mail-emailaddress[selected="true"] .emailDisplayButton{
     make sure that the email bubble stays displayed, and
     tweak the bottom to blend in more w/ the menu */
   cursor: pointer;
-  border-radius: 3px;
-  color: HighlightText;
-  background-color: Highlight;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  color: #fff;
+  background-color: #666699;
 }
 
 .emailSeparator {
@@ -442,6 +437,12 @@ mail-emailaddress[selected="true"] .emailDisplayButton{
 
 .expandHeaderViewButton {
   list-style-image: url("chrome://global/skin/tree/twisty-open.png");
+}
+
+#heading_wrapper {
+  background-color: #CCCCDD;
+  color: #000;
+  border-bottom: 1px solid #9999CC;
 }
 
 #header-view-toolbox {
