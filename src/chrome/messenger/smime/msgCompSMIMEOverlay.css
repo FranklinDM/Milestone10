@@ -13,10 +13,6 @@
   -moz-image-region: rect(0px 120px 24px 96px);
 }
 
-#button-security:hover {
-  -moz-image-region: rect(24px 120px 48px 96px);
-}
-
 #button-security[disabled] {
   -moz-image-region: rect(48px 120px 72px 96px) !important;
 }
@@ -24,10 +20,6 @@
 toolbar[iconsize="small"] #button-security {
   list-style-image: url("chrome://messenger/skin/messengercompose/compose-toolbar-small.png");
   -moz-image-region: rect(0px 80px 16px 64px);
-}
-
-toolbar[iconsize="small"] #button-security:hover {
-  -moz-image-region: rect(16px 80px 32px 64px);
 }
 
 toolbar[iconsize="small"] #button-security[disabled] {
