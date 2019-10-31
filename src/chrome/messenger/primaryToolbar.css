@@ -596,11 +596,13 @@ toolbar[iconsize="small"] #button-archive[disabled] {
   -moz-image-region: rect(32px 320px 48px 304px) !important;
 }
 
+toolbar[iconsize="small"] #button-showconversation,
 toolbar[iconsize="small"] #button-chat {
   list-style-image: url("chrome://messenger/skin/icons/mail-toolbar-small.png");
   -moz-image-region: rect(0px 352px 16px 336px);
 }
 
+toolbar[iconsize="small"] #button-showconversation[disabled],
 toolbar[iconsize="small"] #button-chat[disabled] {
   -moz-image-region: rect(32px 352px 48px 336px) !important;
 }
