@@ -13,11 +13,6 @@
 
 :root {
   --toolbar-custom-color: #CCCCDD;
-  --toolbar-highlight-top: rgba(255,255,255,.5);
-  --toolbar-highlight-bottom: transparent;
-
-  --toolbarbutton-background-color: hsla(210,32%,93%,.3);
-  --toolbarbutton-border-color: hsla(210,54%,20%,.2);
 
   --toolbarbutton-image: url("chrome://browser/skin/Toolbar.png");
   --toolbarbutton-inverted-image: url("chrome://browser/skin/Toolbar.png");
@@ -25,20 +20,9 @@
   --toolbarbutton-large-inverted-image: url("chrome://browser/skin/Toolbar-large.png");
 
   --tab-border-radius: 0px;
-  --tab-selected-highlight: rgba(255,255,255,.7);
   --tab-min-height: 28px;
 
   --window-text-color: currentColor;
-}
-
-:root:-moz-lwtheme-brighttext {
-  --toolbar-highlight-top: rgba(32,32,32,.8);
-  --toolbar-highlight-bottom: rgba(32,32,32,0);
-}
-
-:root:-moz-lwtheme-darktext {
-  --toolbar-highlight-top: rgba(255,255,255,.8);
-  --tab-selected-highlight: rgba(255,255,255,.6);
 }
 
 #menubar-items {
@@ -66,7 +50,7 @@
 
 #navigator-toolbox > toolbar:not(:-moz-lwtheme) {
   -moz-appearance: none;
-  background-color: #CCCCDD;
+  background-color: var(--toolbar-custom-color);
 }
 
 /*
@@ -98,7 +82,7 @@
 
 #browser-bottombox:not(:-moz-lwtheme),
 #print-preview-toolbar:not(:-moz-lwtheme) {
-  background-color: #CCCCDD;
+  background-color: var(--toolbar-custom-color);
 }
 
 /* ::::: app menu button ::::: */
@@ -1393,7 +1377,7 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 .tabbrowser-tab,
 .tabs-newtab-button {
   -moz-appearance: none;
-  background-color: #CCCCDD;
+  background-color: var(--toolbar-custom-color);
   background-clip: padding-box;
   padding: 3px 1px 4px;
   margin: 0;
@@ -2133,7 +2117,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #ctrlTab-panel,
 #allTabs-panel {
   border: 1px solid #9999CC;
-  background: #CCCCDD;
+  background: var(--toolbar-custom-color);
   color: #CCCCFF;
   font-size: 1.2em;
 }
@@ -2929,7 +2913,7 @@ notificationbox[id="sync-notifications"] > notification {
   }
 
   #appcontent:not(:-moz-lwtheme) {
-    background-color: #CCCCDD;
+    background-color: var(--toolbar-custom-color);
   }
 
   .tabbrowser-tab:not(:-moz-lwtheme) {
