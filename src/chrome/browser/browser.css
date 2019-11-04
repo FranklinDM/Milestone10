@@ -14,6 +14,8 @@
 
 :root {
   --toolbar-custom-color: #CCCCDD;
+  --statusbar-custom-color: #666699;
+  --statusbar-text-color: #CCCCFF;
 
   --toolbarbutton-image: url("chrome://browser/skin/Toolbar.png");
   --toolbarbutton-inverted-image: url("chrome://browser/skin/Toolbar.png");
@@ -2183,7 +2185,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
   border-bottom-style: none;
   padding-top: 1px;
   background-image: linear-gradient(#9999AA 1px, transparent 1px);
-  background-color: #666699;
+  background-color: var(--statusbar-custom-color);
   background-size: 100% 2px;
   background-repeat: no-repeat;
 }
@@ -2194,7 +2196,7 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 
 #addon-bar:not(:-moz-lwtheme),
 #addon-bar:not(:-moz-lwtheme) .toolbarbutton-1 {
-  color: #CCCCFF;
+  color: var(--statusbar-text-color);
 }
 
 #status-bar {
