@@ -22,6 +22,7 @@
   --toolbarbutton-large-image: url("chrome://browser/skin/Toolbar-large.png");
   --toolbarbutton-large-inverted-image: url("chrome://browser/skin/Toolbar-large.png");
 
+  --tab-selected-color: #DDDDFF;
   --tab-border-radius: 0px;
   --tab-min-height: 28px;
 
@@ -1401,7 +1402,7 @@ richlistitem[type~="action"][actiontype$="tab"][selected="true"] > .ac-url-box >
 }
 
 .tabbrowser-tab[selected="true"] {
-  background-color: #DDDDFF;
+  background-color: var(--tab-selected-color);
 }
 
 /* Tab style: pinned tabs */
