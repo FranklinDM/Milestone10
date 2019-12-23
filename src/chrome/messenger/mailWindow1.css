@@ -130,7 +130,6 @@ treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
 
 treechildren::-moz-tree-image(attachmentCol, attach) {
   list-style-image: url("chrome://messenger/skin/icons/attachment-col.png");
-  margin-inline-start: 3px;
 }
 
 /* ..... flag column ..... */
