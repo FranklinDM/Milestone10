@@ -76,7 +76,7 @@ button[checked="true"]:not([disabled="true"]) {
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
 
-button:hover:active:not([disabled="true"]) > .button-box .button-text {
+button:hover:active:not([disabled="true"]):not([open="true"]) > .button-box .button-text {
   color: #333366;
   text-decoration: none;
 }
