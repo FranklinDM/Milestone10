@@ -4,7 +4,7 @@
 
 @import url("chrome://messenger/content/multimessageview.css");
 
-/* windows-specific overrides for multimessageview.css*/
+/* overrides for multimessageview.css */
 
 /* mostly it's about CSS colors not being reliable */
 
@@ -16,12 +16,17 @@ body {
   color: ButtonText;
 }
 
-
 .info,
 .count, .date,
 .message > .header > .snippet,
 .message > .header > .senders {
   color: GrayText;
+}
+
+#heading_wrapper {
+  background-color: #CCCCDD;
+  color: #000;
+  border-bottom: 1px solid #9999CC;
 }
 
 #header-view-toolbox {

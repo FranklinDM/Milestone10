@@ -439,12 +439,6 @@ mail-emailaddress[selected="true"] .emailDisplayButton{
   list-style-image: url("chrome://global/skin/tree/twisty-open.png");
 }
 
-#heading_wrapper {
-  background-color: #CCCCDD;
-  color: #000;
-  border-bottom: 1px solid #9999CC;
-}
-
 #header-view-toolbox {
   float: right;
   padding-top: 3px;
