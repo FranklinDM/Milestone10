@@ -56,7 +56,7 @@ slider[orient="vertical"] {
 
 thumb {
   -moz-appearance: none;
-  min-height: 8px;
+  min-height: 16px;
   background-image: url("chrome://global/skin/scrollbar/scroll-thumb-vert.gif");
 }
 
@@ -72,7 +72,7 @@ thumb[disabled="true"] {
 
 thumb[orient="horizontal"] {
   -moz-appearance: none;
-  min-width: 8px;
+  min-width: 16px;
   background-image: url("chrome://global/skin/scrollbar/scroll-thumb-horiz.gif");
 }
 
@@ -199,13 +199,13 @@ scrollbar[orient="vertical"] > scrollbarbutton[type="decrement"][disabled="true"
 
   html|div thumb {
     -moz-appearance: none;
-    min-height: 8px;
+    min-height: 16px;
     background-image: url("chrome://global/skin/scrollbar/scroll-thumb-vert.gif");
   }
 
   html|div thumb[orient="horizontal"] {
     -moz-appearance: none;
-    min-width: 8px;
+    min-width: 16px;
     background-image: url("chrome://global/skin/scrollbar/scroll-thumb-horiz.gif");
   }
 
