@@ -550,11 +550,7 @@
   color: #888A8B;
 }
 
-.addon-view[notification="warning"][native="false"] {
-  background-color: rgba(255, 128, 0, 0.04);
-}
-
-.addon-view[notification="warning"] {
+.addon-view[notification="warning"]:not([native="false"]) {
   background-color: rgb(255, 255, 224);
 }
 
