@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.3
+- Include support for the Communicator Profile Manager
+- Don't show any background color instead for non-native extensions
+
 ### 1.0.2
 - Raise non-native scrollbars minimum width/height to 16px
 - Fix titlebar controls and scrollbars/scrollbox styling for Mac
