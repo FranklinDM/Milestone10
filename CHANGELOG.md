@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.4
+- Fix inconsistent search icon size in the Preferences window
+- Fix missing calendar icon in the Preferences window
+
 ### 1.0.3
 - Include support for the Communicator Profile Manager
 - Don't show any background color instead for non-native extensions
