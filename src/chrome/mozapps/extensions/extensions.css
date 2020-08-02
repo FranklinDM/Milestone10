@@ -1019,7 +1019,7 @@ button.button-link:not([disabled="true"]):active:hover {
   text-shadow: none;
 }
 
-.header-button:hover:active,
+.header-button:not([disabled="true"]):hover:active,
 .header-button[open] {
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
 }
