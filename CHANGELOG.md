@@ -1,5 +1,11 @@
 # Changelog
 
+### 1.0.5
+- Remove excessive padding from toolbar buttons in Mail/News
+- Fix appearance of the Add-ons Manager's notification box
+- Header buttons in the Add-ons Manager should not appear clickable when disabled
+- Replace Software Update Wizard style with platform default
+
 ### 1.0.4
 - Fix inconsistent search icon size in the Preferences window
 - Fix missing calendar icon in the Preferences window
