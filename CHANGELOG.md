@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.0.6
+- Restore missing undo close button in new tab page
+- Fix new tab thumbnail appearance when using placeholders
+- Remove custom Add-ons Manager style used in Ambassador (standalone)
+
 ### 1.0.5
 - Remove excessive padding from toolbar buttons in Mail/News
 - Fix appearance of the Add-ons Manager's notification box
