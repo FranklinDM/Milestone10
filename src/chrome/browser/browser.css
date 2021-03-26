@@ -1109,6 +1109,13 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
   border-right: 1px solid #6A75B6;
 }
 
+#urlbar[pageproxystate="valid"] > #identity-box.mixedContent {
+  color: #726239;
+  margin-inline-end: 4px;
+  background-color: #FFE4A3;
+  border-right: 1px solid ThreeDDarkShadow;
+}
+
 #identity-box.verifiedIdentity:-moz-locale-dir(rtl) {
   background-position: left;
   border-right: none;
@@ -1116,6 +1123,12 @@ html|*.urlbar-input:-moz-lwtheme::-moz-placeholder,
 }
 
 #identity-box.verifiedDomain:-moz-locale-dir(rtl) {
+  background-position: left;
+  border-right: none;
+  border-left: 1px solid rgba(0,79,168,0.5);
+}
+
+#identity-box.mixedContent:-moz-locale-dir(rtl) {
   background-position: left;
   border-right: none;
   border-left: 1px solid rgba(0,79,168,0.5);
