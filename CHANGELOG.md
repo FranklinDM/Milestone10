@@ -1,5 +1,10 @@
 # Changelog
 
+### 1.1.0
+- Add mixed-mode SSL styling
+- Set a minimum width/height for the scrollbar slider (Linux only)
+  * This is a workaround for some GTK themes with missing scrollbar buttons
+
 ### 1.0.6
 - Restore missing undo close button in new tab page
 - Fix new tab thumbnail appearance when using placeholders
