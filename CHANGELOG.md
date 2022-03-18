@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.0
+- Initial support for Pale Moon 30
+
 ### 1.1.0
 - Add mixed-mode SSL styling
 - Set a minimum width/height for the scrollbar slider (Linux only)
