@@ -407,7 +407,8 @@ treechildren::-moz-tree-image(subjectCol, imapdeleted) {
   margin-left: 10px; /* additional space for Aero Snap */
 }
 
-@media (-moz-os-version: windows-win10) {
+@media (-moz-os-version: windows-win10),
+       (-moz-os-version: windows-win11) {
   #messengerWindow[tabsintitlebar] .titlebar-placeholder[type="caption-buttons"] {
     min-width: 143px; /* Bug 1193721, hardcode the width for scaled screens */
   }
