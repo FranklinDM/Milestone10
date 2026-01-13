@@ -137,7 +137,7 @@ menu:not(:-moz-lwtheme):-moz-window-inactive {
   /* End classic titlebar gradient */
 
   #messengerWindow[tabsintitlebar]:not([inFullscreen])
-  :-moz-any(#tabs-toolbar, #mail-toolbar-menubar2)
+  :is(#tabs-toolbar, #mail-toolbar-menubar2)
   toolbarbutton:not(:-moz-lwtheme) {
     color: inherit;
   }
