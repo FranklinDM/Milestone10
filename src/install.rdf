@@ -3,7 +3,7 @@
     <Description about="urn:mozilla:install-manifest">
         <!-- General -->
         <em:id>milestone10@franklindm</em:id>
-        <em:version>dev-build</em:version>
+        <em:version>1.3.0</em:version>
         <em:type>4</em:type>
         <em:internalName>milestone10</em:internalName>
         <em:skinnable>true</em:skinnable>
