@@ -11,7 +11,7 @@
 /* ::::: tree ::::: */
 
 tree {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0px 4px;
   border: 1px solid;
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
@@ -196,7 +196,7 @@ treechildren::-moz-tree-cell-text(progressmeter) {
 
 treecol,
 treecolpicker {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
   border: 1px solid;
@@ -215,7 +215,7 @@ treecolpicker {
 }
 
 treecol[hideheader="true"] {
-  -moz-appearance: none;
+  appearance: none;
   border: none;
   padding: 0;
 }
@@ -329,7 +329,7 @@ treechildren::-moz-tree-cell-text(selected, editing) {
 }
 
 .tree-input {
-  -moz-appearance: none;
+  appearance: none;
   border: 1px solid #666699;
   margin: 0;
   margin-inline-start: -4px;

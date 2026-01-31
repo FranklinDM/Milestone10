@@ -59,7 +59,7 @@ sidebarheader .toolbarbutton-text:not([value]) {
 #searchInput,
 #IMSearchInput,
 .remote-gloda-search {
-  -moz-appearance: none;
+  appearance: none;
   min-height: 22px;
   border: 1px solid threedshadow;
   padding-inline-end: 2px;

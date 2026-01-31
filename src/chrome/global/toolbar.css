@@ -11,7 +11,7 @@
 /* ::::: toolbox ::::: */
 
 toolbox {
-  -moz-appearance: none;
+  appearance: none;
   background-color: #CCCCDD;
   border-top: 1px solid #9999CC;
 }
@@ -19,7 +19,7 @@ toolbox {
 /* ::::: toolbar & menubar ::::: */
 
 toolbar, menubar {
-  -moz-appearance: none;
+  appearance: none;
   min-width: 1px;
   min-height: 19px;
   border-bottom: 1px solid #9999CC;
@@ -30,7 +30,7 @@ toolbar, menubar {
 menubar:-moz-lwtheme,
 toolbox:-moz-lwtheme,
 toolbar:-moz-lwtheme {
-  -moz-appearance: none;
+  appearance: none;
   background: none;
   border-style: none;
 }
@@ -38,7 +38,7 @@ toolbar:-moz-lwtheme {
 /* ::::: toolbar decorations ::::: */
 
 toolbarseparator {
-  -moz-appearance: none;
+  appearance: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-left: 3px solid transparent;

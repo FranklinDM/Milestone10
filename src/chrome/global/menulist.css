@@ -12,7 +12,7 @@
 /* :::::::::: menulist :::::::::: */
 
 menulist {
-  -moz-appearance: none;
+  appearance: none;
   margin: 2px 4px;
   border: 1px solid;
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;

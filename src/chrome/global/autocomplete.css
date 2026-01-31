@@ -38,7 +38,7 @@ textbox:not(.padded) .textbox-input-box {
 panel[type="autocomplete"],
 panel[type="autocomplete-richlistbox"],
 .autocomplete-history-popup {
-  -moz-appearance: none;
+  appearance: none;
   border-width: 1px;
   border-color: #6A6A6A;
   padding: 0;
@@ -53,13 +53,13 @@ panel[type="autocomplete-richlistbox"],
 /* ::::: tree ::::: */
 
 .autocomplete-tree {
-  -moz-appearance: none !important;
+  appearance: none !important;
   border: none !important;
   background-color: transparent !important;
 }
 
 .autocomplete-treecol {
-  -moz-appearance: none !important;
+  appearance: none !important;
   margin: 0 !important;
   border: none !important;
   padding: 0 !important;
@@ -67,7 +67,7 @@ panel[type="autocomplete-richlistbox"],
 
 /* GTK calculates space for a sort arrow */
 .autocomplete-treecol > .treecol-sortdirection {
-  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 .autocomplete-treebody::-moz-tree-cell-text {
@@ -90,7 +90,7 @@ treechildren.autocomplete-treebody::-moz-tree-cell-text(selected) {
 /* ::::: richlistbox autocomplete ::::: */
 
 .autocomplete-richlistbox {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 

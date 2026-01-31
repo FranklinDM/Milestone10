@@ -12,7 +12,7 @@
 /* == Tab style ============================================= */
 /* Unselected tab */
 .tabmail-tab {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: stretch;
   background-color: #CCCCDD;
   margin: 0 0 2px 0;

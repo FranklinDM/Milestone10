@@ -11,7 +11,7 @@
 /* ::::: radio ::::: */
 
 radio {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   margin: 2px 4px;
   padding-top: 1px;
@@ -62,7 +62,7 @@ radio[disabled="true"] {
 /* ::::: checkmark image ::::: */
 
 .radio-check-box1 {
-  -moz-appearance: none;
+  appearance: none;
   margin: 1px 0px;
   border: 1px solid;
   border-color: #ECECEC #6A6A6A #6A6A6A #ECECEC;

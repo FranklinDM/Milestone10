@@ -8,7 +8,7 @@
 
 /* Download View */
 #downloadView {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
   border-bottom: 2px solid;
   -moz-border-bottom-colors: #ECECEC ThreeDLightShadow;
@@ -30,7 +30,7 @@ richlistitem[type="download"] .dateTime {
 }
 
 .mini-button {
-  -moz-appearance: none;
+  appearance: none;
   list-style-image: url(chrome://mozapps/skin/downloads/downloadButtons.png);
   background-color: transparent;
   border: none;

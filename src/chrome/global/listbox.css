@@ -12,7 +12,7 @@
 /* ::::: listbox ::::: */
 
 listbox {
-  -moz-appearance: none;
+  appearance: none;
   margin: 2px 4px;
   border: 1px solid;
   border-color: #6A6A6A #ECECEC #ECECEC #6A6A6A;
@@ -52,7 +52,7 @@ listbox:focus > listitem[selected="true"] {
 /* ::::: listheader ::::: */
 
 listheader {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   border: 1px solid;
   -moz-border-top-colors: #ECECEC;
@@ -123,7 +123,7 @@ listheader[sortable="true"]:hover:active {
 /* ::::: listcell checkbox ::::: */
 
 .listcell-check {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   margin: 0px 2px;
   border: 1px solid #000;

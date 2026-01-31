@@ -11,7 +11,7 @@
 /* ::::: groupbox ::::: */
 
 groupbox {
-  -moz-appearance: none;
+  appearance: none;
   border: 2px groove ThreeDFace;
   margin: 3px;
   padding: 3px 3px 6px;
@@ -27,7 +27,7 @@ caption {
 }
 
 tabpanels caption {
-  -moz-appearance: none;
+  appearance: none;
 }
 
 /* !important is needed to override label in global.css */

@@ -11,7 +11,7 @@
 /* ::::: toolbarbutton ::::: */
 
 toolbarbutton {
-  -moz-appearance: none;
+  appearance: none;
   -moz-box-align: center;
   -moz-box-pack: center;
   margin: 0;
@@ -36,9 +36,9 @@ toolbarbutton.tabbable {
 }
 
 toolbarbutton:-moz-focusring {
-  /* -moz-appearance looks redundant here but is necessary.
+  /* appearance looks redundant here but is necessary.
       Without it, the outline won't appear. */
-  -moz-appearance: none;
+  appearance: none;
   outline: 1px dotted #000;
   outline-offset: -2px;
 }
@@ -87,7 +87,7 @@ toolbarbutton:-moz-lwtheme:not([disabled="true"]) {
 /* ::::: toolbarbutton menu ::::: */
 
 .toolbarbutton-menu-dropmarker {
-  -moz-appearance: none !important;
+  appearance: none !important;
   border: none !important;
   background-color: transparent !important;
   padding: 0;
@@ -170,7 +170,7 @@ toolbarbutton[type="menu-button"][checked="true"]:not([disabled="true"]) .toolba
 /* .......... dropmarker .......... */
 
 .toolbarbutton-menubutton-dropmarker {
-  -moz-appearance: none;
+  appearance: none;
   padding: 3px 4px;
   border: 1px solid transparent;
   background-color: transparent;

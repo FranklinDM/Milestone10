@@ -17,7 +17,7 @@ panel {
 }
 
 menupopup {
-  -moz-appearance: none;
+  appearance: none;
 }
 
 menupopup > menu > menupopup {
@@ -27,7 +27,7 @@ menupopup > menu > menupopup {
 }
 
 panel[type="arrow"] {
-  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: none;
 }
@@ -91,7 +91,7 @@ panel[type="arrow"][side="right"] {
 /* ::::: tooltip ::::: */
 
 tooltip {
-  -moz-appearance: none;
+  appearance: none;
   margin-top: 21px;
   border: 1px solid InfoText;
   padding: 2px 3px;
@@ -108,7 +108,7 @@ tooltip[titletip="true"] {
 /* rules for popups associated with menulists */
 
 menulist > menupopup {
-  -moz-appearance: none;
+  appearance: none;
   border-color: #5B5B5B;
   padding: 0px;
   min-width: 0px;
